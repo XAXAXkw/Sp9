@@ -2,7 +2,7 @@
     <br />
     <br />
     <div>
-<h1>BetaZone</h1>
+<h1>BetaZones</h1>
 
 <hr />
 <br />
@@ -22,6 +22,7 @@
 
 <div><img class='icons' src="@/assets/icon_music.png" />
 <p>music</p></div>
+
 
 
 </div>
