@@ -1,6 +1,8 @@
 <template>
   <div>
-  <div class="badge">Login</div>
+  <div class="badge">Login        
+  
+  <a href="#"><img style="height:50px" src="@/assets/xaxaxlogo16-172x122.png" /></a> </div>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <div class="container d-flex">
@@ -71,25 +73,37 @@
       </div>
     </nav>
     <div class="bg-dark d-flex-end p-2">
-      <a style="color: black">
-        <p>Ivan Cuadros' <br />VIRTUAL SWAMP</p>
-      </a>
 
-      <p style="font-size: 4px; margin-left: 12em">
-        <img src="@/assets/xaxaxlogo16-172x122.png" />
+
+        <p style="font-size: 4px; margin-left: 12em">
+
 
         <router-link to="/beta"> BETA</router-link> |
 
         <router-link to="/card"> Card</router-link> |
-        <a href="../insides/swampjstest.html" target="_self">JS</a>
+        <a href="../insides/swampjstest.html" target="_self">JS</a> | 
+      
       </p>
+
+      <div class="container d-flex justify-content-evenly p-1">
+      <h6>WORKS for SALE :
+      <button class="btn btn-success m-1 ">item 1</button>
+      <button class="btn btn-success m-1">item 2</button>
+      <button class="btn btn-success m-1">item 3</button>
+      <button class="btn btn-success m-1">item 4</button></h6>
+      </div>
     </div>
+    <FooterComp />
   </div>
 </template>
 
 <script>
+import FooterComp from '@/components/FooterComp.vue'
 export default {
   name: "NavBar",
+components:{
+  FooterComp
+}
 };
 </script>
 
@@ -117,9 +131,11 @@ a:hover {
   text-shadow: 1px 1px 45px aquamarine;
 }
 .badge{
+  margin-left: 20%;
+  margin-top:1em;
   position: absolute;
-  z-index:10;
-  margin:15px;
+  z-index:1;
+  margin-right:5px;
   border:solid 1px green;
   border-radius: 25px;
   background-color: black;
