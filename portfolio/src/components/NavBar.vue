@@ -72,7 +72,7 @@
         </div>
       </div>
     </nav>
-    <div class="bg-dark d-flex-end p-2">
+    <div class="bg-dark d-flex-end">
 
 
         <p style="font-size: 4px; margin-left: 12em">
@@ -85,13 +85,7 @@
       
       </p>
 
-      <div class="container d-flex justify-content-evenly p-1">
-      <h6>WORKS for SALE :
-     <router-link to="/card"><button class="btn btn-success m-1 ">item 1</button></router-link> 
-      <button class="btn btn-success m-1">item 2</button>
-      <button class="btn btn-success m-1">item 3</button>
-      <button class="btn btn-success m-1">item 4</button></h6>
-      </div>
+     
     </div>
     <FooterComp />
   </div>
