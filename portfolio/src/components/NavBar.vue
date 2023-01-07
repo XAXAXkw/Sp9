@@ -47,7 +47,7 @@
                 <li><a class="dropdown-item" href="#">FineArts</a></li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a class="dropdown-item">
                     <router-link to="/catalogue">FULL Catalogue</router-link>
                   </a>
                 </li>
@@ -70,8 +70,8 @@
         </div>
       </div>
     </nav>
-    <div class="bg-dark d-flex-end">
-      <a style="color: yellowgreen">
+    <div class="bg-dark d-flex-end p-2">
+      <a style="color: black">
         <p>Ivan Cuadros' <br />VIRTUAL SWAMP</p>
       </a>
 
@@ -81,6 +81,7 @@
         <router-link to="/beta"> BETA</router-link> |
 
         <router-link to="/card"> Card</router-link> |
+        <a href="../insides/swampjstest.html" target="_self">JS</a>
       </p>
     </div>
   </div>

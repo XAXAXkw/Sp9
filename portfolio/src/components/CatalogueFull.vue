@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <div class="weeds">
       <img src="@/assets/bkg_weed_float2.png" />
     </div>
@@ -11,8 +12,10 @@
       <hr />
       <br />
       <div class="container bg-dark p-4">
-        <button @click="getData">GET</button>
-        FULL CATALOGUE
+        <button @click="getData()">GET</button>
+        FULL CATALOGUE : length:  {{ FullCat.length }}
+        <img class="icons" src="@/assets/icon_compu.svg" >
+        <img class="icons" src="@/assets/icon_paint.svg" >
       </div>
 
       <div class="iconer container bg-light d-flex p-4">
@@ -79,8 +82,18 @@
 </template>
 
 <script>
+import { mapState, mapMutations,mapActions } from 'vuex';
+
+
+
+
+
 export default {
   name: "CatalogueFull",
+  computed:{
+
+    ...mapState(['FullCat'])
+  },
   data() {
     return {
       CatData: [
@@ -91,15 +104,13 @@ export default {
     };
   },
 
+
   methods: {
-    getData() {
-      this.CatData.map((o) => {
-        o.name;
-      });
-      console.log(this.CatData);
-    },
-  },
-};
+    ...mapMutations(['fillCat']),
+    ...mapActions(['getCat'])
+    }
+  }
+;
 </script>
 
 <style lang="css" scoped>
@@ -134,5 +145,6 @@ p {
   opacity: 0.8;
   position: absolute;
   margin-top: 0px;
+  z-index: -1;
 }
 </style>
