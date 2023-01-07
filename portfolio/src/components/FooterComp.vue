@@ -23,10 +23,11 @@
 
 <style lang="scss">
 .footer{
-background-color: rgba(127, 255, 212, 0.197);
+background-color: rgb(42, 74, 63);
 max-width: 100%;
 margin: 0 !important;
 position: fixed;
+z-index:100;
   left: 0;
   bottom: 0;
   width: 100%;

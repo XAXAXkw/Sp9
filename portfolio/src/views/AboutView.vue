@@ -4,7 +4,7 @@
 <SnapShot />
 
 
-    <div class="row">
+    <div class="row ">
       <div class="Pic col-8">a.- PIC CONTAINER</div>
 
       <div class="col-4 border border-success p-2 rounded">
@@ -162,5 +162,6 @@ export default{
 .Pic {
   background-color: black;
   height: 400px;
+
 }
 </style>

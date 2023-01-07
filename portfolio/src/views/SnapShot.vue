@@ -2,8 +2,18 @@
   <div >
 
   <div class="container snapper">
+  - - - - - - - - - 
+  <br />
+  HELLO HUMAN.
+  <br />
   
-  Lorem ipsum doluta, tenetur fuga voluptates?</div>
+  Would you like to know about my creator?<img style="height: 25px" src="@/assets/cursor.gif" />
+  <hr />
+  <button>YES</button>
+  or  <button>NO</button>
+  
+  
+  </div>
 
   
   
@@ -19,15 +29,24 @@ export default { name: "SnapShot" };
 
 .snapper{
 
-margin:auto;
+margin:10em auto;
     position:fixed;
     z-index:10;
     display: flexbox;
     align-items: center;
-    width:500px;
+    width:750px;
     height:500px;
     padding:25px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 100px rgb(13, 255, 0);
     
 
     background-color: rgba(47, 255, 0, 0.655);
-}</style>
+}
+
+button{
+  background-color: black;
+  color:green;
+}
+
+</style>
