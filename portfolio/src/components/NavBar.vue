@@ -1,12 +1,9 @@
 <template>
   <div>
+  <div class="badge">Login</div>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <div class="container d-flex">
-          <a style="color: yellowgreen"
-            ><img src="@/assets/xaxaxlogo16-172x122.png" />
-            <p>Ivan Cuadros' <br />VIRTUAL SWAMP</p></a
-          >
           <div></div>
 
           <div class="container p-4"></div>
@@ -24,12 +21,16 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-4 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">
+                <router-link to="/">START</router-link></a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">
+                <router-link to="/about"> Score</router-link>
+              </a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -39,37 +40,46 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown
+                Items
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Computed</a></li>
+                <li><a class="dropdown-item" href="#">FineArts</a></li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <router-link to="/catalogue">FULL Catalogue</router-link>
+                  </a>
+                </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+              <a class="nav-link disabled">Search</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
             <input
+              style="width: 200px"
               class="form-control me-2"
               type="search"
-              placeholder="Artworks..."
-              aria-label="Search"
+              placeholder="ArtWork"
+              aria-label="search"
             />
-            <button class="btn btn-outline-light" type="submit">Search</button>
+            <button class="btn btn-outline-light" type="submit">FIND</button>
           </form>
         </div>
       </div>
     </nav>
     <div class="bg-dark d-flex-end">
+      <a style="color: yellowgreen">
+        <p>Ivan Cuadros' <br />VIRTUAL SWAMP</p>
+      </a>
+
       <p style="font-size: 4px; margin-left: 12em">
-        <router-link to="/">Home</router-link> |
-        <router-link to="/about"> About</router-link> |
+        <img src="@/assets/xaxaxlogo16-172x122.png" />
+
         <router-link to="/beta"> BETA</router-link> |
-        <router-link to="/catalogue"> Catalogue</router-link> |
+
         <router-link to="/card"> Card</router-link> |
       </p>
     </div>
@@ -104,5 +114,13 @@ a {
 a:hover {
   color: rgb(34, 166, 91);
   text-shadow: 1px 1px 45px aquamarine;
+}
+.badge{
+  position: absolute;
+  z-index:10;
+  margin:15px;
+  border:solid 1px green;
+  border-radius: 25px;
+  background-color: black;
 }
 </style>
