@@ -16,7 +16,7 @@ components:{
 #app {
 
   font-family: 'Press Start 2P', cursive; 
-  text-align: center;
+  
   color:  #a0cb96;
 }
 h6,p{

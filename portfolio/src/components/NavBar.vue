@@ -36,9 +36,16 @@
     </div>
   </div>
 </nav>
+<div class="bg-light d-flex-end">
+
 <router-link to="/">Home</router-link> | 
     <router-link to="/about"> About</router-link> | 
-    <router-link to="/beta"> BETA</router-link>
+    <router-link to="/beta"> BETA</router-link> |
+    <router-link to="/catalogue"> Catalogue</router-link> |
+    
+    
+    </div>
+
     </div>
 </template>
 
@@ -55,5 +62,13 @@ a{
 }
 navbar{
     max-width:100%
+    
+}
+a{
+text-decoration: none;
+  color:rgb(147, 228, 153);
+}
+a:hover{
+  color:rgb(34, 166, 91);
 }
 </style>
