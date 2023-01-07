@@ -1,8 +1,13 @@
 <template>
     <div>
-        <nav class="navbar navbar-expand-lg bg-success">
+        <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+  <div class="container d-flex"> <a style="color:yellowgreen"><p>Ivan Cuadros ATELIER</p></a>
+  <div>  <img src="@/assets/xaxaxlogo16-172x122_a.png"/></div>
+  
+  <div class="container p-4">  </div>
+  </div>
+ 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -37,12 +42,12 @@
   </div>
 </nav>
 <div class="bg-light d-flex-end">
-
+<p style="font-size:4px;margin-left:12em">
 <router-link to="/">Home</router-link> | 
     <router-link to="/about"> About</router-link> | 
     <router-link to="/beta"> BETA</router-link> |
     <router-link to="/catalogue"> Catalogue</router-link> |
-    
+    </p>
     
     </div>
 
@@ -60,15 +65,19 @@ a{
     font-size: 11px;
     letter-spacing: normal;
 }
-navbar{
-    max-width:100%
+.navbar{
+    max-width:100%;
+    background: rgb(19,65,29);
+background: linear-gradient(153deg, rgba(19,65,29,1) 8%, rgba(34,195,70,1) 49%, rgba(45,253,175,1) 100%);
     
 }
 a{
 text-decoration: none;
   color:rgb(147, 228, 153);
+
 }
 a:hover{
   color:rgb(34, 166, 91);
+  text-shadow: 1px 1px 45px aquamarine;
 }
 </style>

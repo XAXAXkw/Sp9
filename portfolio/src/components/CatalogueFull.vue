@@ -1,5 +1,8 @@
 <template>
     <div>
+    <div class="weeds" >
+<img src="@/assets/bkg_weed_float2.png"/>
+</div>
         <br />
     <br />
     <div>
@@ -200,5 +203,13 @@ border-radius: 10px;
 padding: 5px;
     line-height:1em;
     color:rgb(200, 207, 214);
+}
+.weeds{
+    
+opacity: 0.8;
+position: absolute;
+margin-top: 0px;
+    
+ 
 }
 </style>

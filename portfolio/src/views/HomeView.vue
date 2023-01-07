@@ -1,9 +1,11 @@
 <template>
-  <div class="home">
+  <div class="home row">
   <div class="container">
-    <img alt="Vue logo" src="../assets/logo.png">
+    <img style="width:200px" alt="Vue logo" src="../assets/logo2.png">
+
    
-    </div>
+    </div>   
+    <div class="container"> <img style="width:200px" alt="Vue logo" src="../assets/upwork2.png"></div>
   </div>
 </template>
 

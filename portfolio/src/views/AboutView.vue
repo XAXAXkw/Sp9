@@ -32,6 +32,84 @@
   </div>
   
   
+
+
+  <div class="container border-light"> 
+  <div class="row">
+  <div class="colborder"><div class="container  border bg-success">  <h1>1990</h1></div></div></div>
+  <div class="colborder ">
+  <div class="container"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus minima saepe consectetur animi magni officiis maxime vel placeat? </p><h6>Consequuntur provident</h6> <h5>delectus omnis </h5></div>
+  </div>
+
+
+
+  
+  </div>
+  
+
+
+
+
+  <div class="container border-light"> 
+  <div class="row">
+  <div class="colborder"><div class="container  border bg-success">  <h1>2000</h1></div></div></div>
+  <div class="colborder ">
+  <div class="container"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus minima saepe consectetur animi magni officiis maxime vel placeat? </p><h6>Consequuntur provident</h6> <h5>delectus omnis </h5></div>
+  </div>
+
+
+
+  
+  </div>
+  
+
+
+
+  <div class="container border-light"> 
+  <div class="row">
+  <div class="colborder"><div class="container  border bg-success">  <h1>2005</h1></div></div></div>
+  <div class="colborder ">
+  <div class="container"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus minima saepe consectetur animi magni officiis maxime vel placeat? </p><h6>Consequuntur provident</h6> <h5>delectus omnis </h5></div>
+  </div>
+
+
+
+  
+  </div>
+  
+
+
+
+  <div class="container border-light"> 
+  <div class="row">
+  <div class="colborder"><div class="container  border bg-success">  <h1>2010</h1></div></div></div>
+  <div class="colborder ">
+  <div class="container"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus minima saepe consectetur animi magni officiis maxime vel placeat? </p><h6>Consequuntur provident</h6> <h5>delectus omnis </h5></div>
+  </div>
+
+
+
+  
+  </div>
+  
+
+
+
+
+  <div class="container border-light"> 
+  <div class="row">
+  <div class="colborder"><div class="container  border bg-success">  <h1>2020</h1></div></div></div>
+  <div class="colborder ">
+  <div class="container"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus minima saepe consectetur animi magni officiis maxime vel placeat? </p><h6>Consequuntur provident</h6> <h5>delectus omnis </h5></div>
+  </div>
+
+
+
+  
+  </div>
+
+
+
   
 
   
