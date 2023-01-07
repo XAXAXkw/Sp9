@@ -10,13 +10,13 @@
 
 <hr />
 <br />
-<div class="container  bg-light  p-4">
+<div class="container  bg-dark p-4">
 <button @click="getData">GET</button>
 FULL CATALOGUE</div>
 
 
 
-<div class="iconer container d-flex p-4 ">
+<div class="iconer container bg-light d-flex p-4 ">
 
 
 <div><img class='icons' src="@/assets/icon_comics.png" />

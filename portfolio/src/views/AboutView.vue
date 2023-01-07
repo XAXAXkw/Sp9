@@ -1,4 +1,26 @@
 <template>
+
+
+<div class="container border border-dark">
+
+<div class="row">
+
+<div class=" Pic col-8 border">a.- PIC CONTAINER</div>
+
+<div class="col-4 border">b.-text
+
+<hr />
+
+
+
+</div>
+</div>
+
+</div>
+
+
+
+
 <div class="row m-auto about">
 <div class="w-75 border border-light "></div>
 
@@ -116,3 +138,14 @@
   </div>
   </div>
 </template>
+<style lang="scss" scoped>
+
+.Pic{
+  background-color: black;
+  height:400px;
+}
+
+
+
+
+</style>

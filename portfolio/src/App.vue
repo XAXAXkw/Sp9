@@ -16,8 +16,8 @@ components:{
 #app {
 
   font-family: 'Press Start 2P', cursive; 
-  
-  color:  #a0cb96;
+  background-color: black;
+  color:  #9dff00;
 }
 h6,p{
   font-family: 'Press Start 2P', cursive; 
