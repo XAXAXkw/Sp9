@@ -6,14 +6,14 @@
     <img style="width:20px" alt="Vue logo" src="../assets/logo2.png">
 
 
- <img style="width:20px" alt="Vue logo" src="../assets/git.png">
+    <a href="https://github.com/XAXAXkw"><img style="width:20px" alt="Vue logo" src="../assets/git.png">  </a>
 
 
    <img style="width:20px" alt="Vue logo" src="../assets/tube.png">  
 
     </div>   
     <br />
-    <div class="container"> ivancuadros.com </div>
+    <div class="container"> ivancuadros.com<img style="height: 25px" src="@/assets/cursor.gif" /> </div>
     </div>
 </template>
 
@@ -34,5 +34,12 @@ z-index:100;
   bottom: 0;
   width: 100%;
 }
-
+a {
+  text-decoration: none;
+  color: rgb(147, 228, 153);
+}
+a:hover {
+  color: rgb(34, 166, 91);
+  box-shadow: 1px 1px 45px aquamarine;
+}
 </style>
