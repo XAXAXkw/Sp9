@@ -32,6 +32,11 @@ const routes = [
     path: '/card',
     name: 'card',
     component: () => import('@/components/CardComp.vue')
+  },
+  {
+    path: '/todo',
+    name: 'todo',
+    component: () => import('@/components/ToDo.vue')
   }
 ]
 

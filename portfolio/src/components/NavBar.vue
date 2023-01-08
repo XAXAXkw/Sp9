@@ -25,16 +25,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-4 mb-lg-0">
 
-            <li class="nav-item">
-            
-            <a class="nav-link active" aria-current="page" href="#">
-              <router-link to="/">CONTRACT</router-link></a
-            >
-          </li>
+           
             <li class="nav-item">
             
               <a class="nav-link active" aria-current="page" href="#">
-                <router-link to="/">SHOP</router-link></a
+                <router-link to="/todo">FAQS</router-link></a
               >
             </li>
             <li class="nav-item">
@@ -62,21 +57,27 @@
                 <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a class="dropdown-item">
-                    <router-link to="/catalogue">FULL Catalogue</router-link>
+                    <router-link to="/card">FULL Catalogue</router-link>
                   </a>
                 </li>
               </ul>
             </li>
+
+
             <li class="nav-item">
-              <a class="nav-link disabled">Search</a>
-            </li>
+            
+            <a class="nav-link active" aria-current="page" href="#">
+              <router-link to="/"><button  class="btn btn-sm btn-success">UPWORK</button></router-link></a
+            >
+          </li>
+
           </ul>
           <form class="d-flex" role="search">
             <input
               style="width: 200px;background-color: black;border:solid 1px yellowgreen; color:yellowgreen"
               class="form-control me-2"
               type="search"
-              placeholder="ArtWork"
+              placeholder="..."
               aria-label="search"
             />
             <button class="btn btn-outline-light" type="submit">FIND</button>
@@ -86,7 +87,7 @@
       </div>
     </nav>
     <div class="bg-dark d-flex-end p-2">
-<p class="B6" >Virtual ART - SWAMP | Barcelona MMXXIII </p>
+<p class="B6" >Virtual ART - SWAMP | Barcelona MMXXIII </p>    <div class="container"> ivancuadros.com<img style="height: 25px" src="@/assets/cursor.gif" /> </div>
 
   
 
@@ -128,8 +129,9 @@ a {
 }
 a:hover {
   color: rgb(34, 166, 91);
-  text-shadow: 1px 1px 45px aquamarine;
+
 }
+
 .badge{
   margin-left: 20%;
   margin-top:1em;

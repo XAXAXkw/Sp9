@@ -1,19 +1,48 @@
 <template>
   <div>
-    <h1>INSERT DOUBTS</h1>
+    <h1>WHY NOT?</h1>
 
     <div class="container d-flex justify-content-evenly">
       <div>
         <img class="imgB" src="@/assets/banana.svg" />
+        <div class="container thingreen">
+        <h4>Why are you bald?</h4>
+        </div>
+
+<hr />
+<div class="thingreen">cont
+<div class="row border">row
+<div class="col border">col0</div>
+<div class="col border">col1</div>
+<div class="col border">col2
+<div class="container border">container
+<div class="row border">row1</div>
+<div class="row border">row2</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
         
         <div class="d-flex">        <input class="inputDark" placeholder="Why are we here?..."/>
-        <button @click="sureNot" class="btn btn-sm text-success m-1">ASK ME ANYTHING</button></div>
+        <button @click="addTodo" class="btn btn-sm text-success m-1">ASK ME ANYTHING</button></div>
 
       </div>
     </div>
 
     <hr />
     <div class="LIST">
+
+
+    
       <ol>
         <li>
           <h4 style="color: white">
@@ -63,14 +92,19 @@ export default {
     }
   },
   methods:{
-    sureNot(){
-        alert('Hi')
+    addTodo(){
+ 
     }
   }
 };
 </script>
 
 <style lang="scss" scoped>
+.thingreen{
+    border:solid 0.5px green;
+    padding:10px;
+    border-radius:1em;
+}
 
 .inputDark {
   margin: 15px;
@@ -108,8 +142,9 @@ li {
 }
 h4{
     font-size: 10px;
+    color:green;
 }
 .imgB{
-    margin:5em;
+    margin:2em;
     width:15vmax;
 }</style>

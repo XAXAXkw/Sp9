@@ -1,12 +1,12 @@
 <template>
   <div>
     <div class="container">
-      <p style="color: yellow">Artwork</p>
+      <p style="color: rgb(42, 74, 63);">Artwork</p>
       <h1>327</h1>
       CARD HEADER<img style="height: 25px" src="@/assets/cursor.gif" />
       <p>102</p>
 
-      <h6>
+      <h6  style="color:  rgb(42, 74, 63)">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate animi sequi
         aperiam temporibus? Recusandae, iure hic. Distinctio facilis id, corporis veniam
         laboriosam exercitationem, culpa inventore, qui voluptate quaerat vero accusamus?
@@ -49,5 +49,8 @@ p {
   align-self: center;
   margin: auto;
   padding: 10px;
+}
+h6{
+  font-size: 0.5em;
 }
 </style>

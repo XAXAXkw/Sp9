@@ -1,15 +1,16 @@
 <template>
   <NavBar />
-  <ToDo />
+<VisorComp />
   <router-view />
 </template>
 <script>
 import NavBar from "@/components/NavBar.vue";
-import ToDo from "@/components/ToDo.vue";
+import VisorComp from "@/components/VisorComp.vue";
+
 export default {
   components: {
-    NavBar,
-    ToDo,
+    NavBar,VisorComp
+ 
   },
 };
 </script>
