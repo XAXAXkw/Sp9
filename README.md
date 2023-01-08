@@ -2,6 +2,7 @@
 Atelier
 
 Online Catalogue of Multimedia Production
+JS SASS CSS HTML5 VUE.JS PINIA AXIOS ROUTER
 
 Functional Porfolio
 
