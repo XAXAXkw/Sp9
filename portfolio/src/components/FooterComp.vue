@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="container footer d-flex justify-content-evenly border  border-success p-1">
-    <img style="width:20px" alt="Vue logo" src="../assets/upwork2.png">  
+    <a href="https://www.upwork.com/freelancers/~012894ee17b3a6616a"><img style="width:20px" alt="Vue logo" src="../assets/upwork2.png">  </a>
     <img style="width:20px" alt="Vue logo" src="../assets/behance-xxl.png">
     <img style="width:20px" alt="Vue logo" src="../assets/logo2.png">
 
@@ -9,9 +9,11 @@
  <img style="width:20px" alt="Vue logo" src="../assets/git.png">
 
 
-   <img style="width:20px" alt="Vue logo" src="../assets/tube.png">
+   <img style="width:20px" alt="Vue logo" src="../assets/tube.png">  
+
     </div>   
-    <div class="container"> </div>
+    <br />
+    <div class="container"> ivancuadros.com </div>
     </div>
 </template>
 

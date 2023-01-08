@@ -29,12 +29,12 @@ export default { name: "SnapShot" };
 
 .snapper{
 
-margin:10em auto;
+margin-left:30%;
     position:fixed;
     z-index:10;
     display: flexbox;
     align-items: center;
-    width:750px;
+    width:500px;
     height:500px;
     padding:25px;
     border-radius: 25px;

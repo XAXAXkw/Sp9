@@ -1,13 +1,13 @@
 <template>
-  <div class="container border border-dark">
-
-<SnapShot />
+  <div class="container ">
 
 
-    <div class="row ">
-      <div class="Pic col-8">a.- PIC CONTAINER</div>
 
-      <div class="col-4 border border-success p-2 rounded">
+
+    <div class="container w-75"><SnapShot />
+      <div class="Pic col-8">BIO</div>
+
+      <div class="col-12 col-md-4 border border-success p-2 rounded">
         b.-text
         <div class="row m-auto about">
           <div>

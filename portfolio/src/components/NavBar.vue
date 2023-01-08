@@ -47,6 +47,10 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Computed</a></li>
                 <li><a class="dropdown-item" href="#">FineArts</a></li>
+                <li><a class="dropdown-item" href="#">Comic-Books</a></li>
+                <li><a class="dropdown-item" href="#">Animation</a></li>
+                <li><a class="dropdown-item" href="#">Music</a></li>
+                <li><a class="dropdown-item" href="#">Photography</a></li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a class="dropdown-item">
@@ -72,18 +76,10 @@
         </div>
       </div>
     </nav>
-    <div class="bg-dark d-flex-end">
+    <div class="bg-dark d-flex-end p-2">
+<p class="B6" >Art & Multimedia Productions</p>
 
-
-        <p style="font-size: 4px; margin-left: 12em">
-
-
-        <router-link to="/beta"> BETA</router-link> |
-
-        <router-link to="/card"> Card</router-link> |
-        <a href="../insides/swampjstest.html" target="_self">JS</a> | 
-      
-      </p>
+  
 
      
     </div>
@@ -133,5 +129,9 @@ a:hover {
   border:solid 1px green;
   border-radius: 25px;
   background-color: black;
+}
+.B6{
+  color:green;
+  text-align:right;
 }
 </style>
