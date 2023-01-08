@@ -1,8 +1,8 @@
 <template>
   <div>
-  <div class="badge">Login        
-  
-  <a href="#"><img style="height:50px" src="@/assets/xaxaxlogo16-172x122.png" /></a> </div>
+
+  <LogBadge />
+
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <div class="container d-flex">
@@ -24,14 +24,22 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-4 mb-lg-0">
+
             <li class="nav-item">
+            
+            <a class="nav-link active" aria-current="page" href="#">
+              <router-link to="/">CONTRACT</router-link></a
+            >
+          </li>
+            <li class="nav-item">
+            
               <a class="nav-link active" aria-current="page" href="#">
-                <router-link to="/">HOME</router-link></a
+                <router-link to="/">SHOP</router-link></a
               >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <router-link to="/about"> About</router-link>
+                <router-link to="/about"> BIO</router-link>
               </a>
             </li>
             <li class="nav-item dropdown">
@@ -65,19 +73,20 @@
           </ul>
           <form class="d-flex" role="search">
             <input
-              style="width: 200px"
+              style="width: 200px;background-color: black;border:solid 1px yellowgreen; color:yellowgreen"
               class="form-control me-2"
               type="search"
               placeholder="ArtWork"
               aria-label="search"
             />
             <button class="btn btn-outline-light" type="submit">FIND</button>
+            <a href="#"><img style="height:50px" src="@/assets/xaxaxlogo16-172x122.png" /></a> 
           </form>
         </div>
       </div>
     </nav>
     <div class="bg-dark d-flex-end p-2">
-<p class="B6" >Art & Multimedia Productions</p>
+<p class="B6" >Virtual SWAMP | Barcelona MMXXIII </p>
 
   
 
@@ -89,10 +98,11 @@
 
 <script>
 import FooterComp from '@/components/FooterComp.vue'
+import LogBadge from '@/components/LogBadge.vue'
 export default {
   name: "NavBar",
 components:{
-  FooterComp
+  FooterComp,LogBadge
 }
 };
 </script>

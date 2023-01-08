@@ -1,12 +1,14 @@
 <template>
 <NavBar />
-  <router-view/>
+<ToDo />
+  <!--router-view/-->
 </template>
 <script>
 import NavBar from '@/components/NavBar.vue'
+import ToDo from '@/components/ToDo.vue'
 export default {
 components:{
-  NavBar
+  NavBar,ToDo
 }
 
 }
