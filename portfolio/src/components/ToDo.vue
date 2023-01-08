@@ -1,11 +1,14 @@
 <template>
   <div>
-    <h1>TO DO List</h1>
+    <h1>INSERT DOUBTS</h1>
 
     <div class="container d-flex justify-content-evenly">
       <div>
-        <input class="inputDark" />
-        <button class="btn btn-sm text-success m-1">ADD</button>
+        <img class="imgB" src="@/assets/banana.svg" />
+        
+        <div class="d-flex">        <input class="inputDark" placeholder="Why are we here?..."/>
+        <button @click="sureNot" class="btn btn-sm text-success m-1">ASK ME ANYTHING</button></div>
+
       </div>
     </div>
 
@@ -14,24 +17,61 @@
       <ol>
         <li>
           <h4 style="color: white">
-            Lkghjghf
+            Sleep at least 10hrs.
 
             <button class="btn btn-sm text-success m-1">V</button>
             <button class="btn btn-sm text-danger m-1">X</button>
           </h4>
         </li>
+
+
+        <li>
+          <h4 style="color: white">
+            Sleep 10hrs more.
+
+            <button class="btn btn-sm text-success m-1">V</button>
+            <button class="btn btn-sm text-danger m-1">X</button>
+          </h4>
+        </li>
+
+
+
+
       </ol>
     </div>
   </div>
 </template>
 
 <script>
+
+
+
+const todos = [
+    {
+        id:1,
+        text:'do this',
+        isFinished: false,
+    }
+]
+
+
 export default {
   name: "ToDo",
+  data(){
+    return{
+        todos
+    }
+  },
+  methods:{
+    sureNot(){
+        alert('Hi')
+    }
+  }
 };
 </script>
 
 <style lang="scss" scoped>
+
 .inputDark {
   margin: 15px;
   height: 30px;
@@ -42,14 +82,23 @@ export default {
   background-color: black;
   border: solid 1px yellowgreen;
   color: green;
-  box-shadow: 1px 1px 100px aquamarine;
+
+}
+
+h1{
+      text-shadow: 1px 1px 20px aquamarine;
+      padding:1em;
 }
 
 .LIST {
   margin-left: 20%;
   font-size: 1.5vmax;
 }
+ol{
+      list-style:decimal;
+}
 li {
+  
   display: block;
   width: 50%;
   text-decoration: underline 0.5px;
@@ -57,4 +106,10 @@ li {
   padding: 10px;
   margin: 5px;
 }
-</style>
+h4{
+    font-size: 10px;
+}
+.imgB{
+    margin:5em;
+    width:15vmax;
+}</style>

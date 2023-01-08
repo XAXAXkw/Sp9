@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div>home</div>
+  <!--div>
 
     <iframe  style="border:none;margin:auto" width="100%" height="315" src="https://www.youtube.com/embed/8phwsgBFxHg?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; " allowfullscreen></iframe>
 
@@ -30,7 +31,7 @@
 
 <iframe max-width="560" height="315" src="https://www.youtube.com/embed/9VaNWiBiSTg?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; " allowfullscreen />
 
-  </div></div>
+  </div></div-->
 </template>
 
 <script>

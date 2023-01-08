@@ -86,7 +86,7 @@
       </div>
     </nav>
     <div class="bg-dark d-flex-end p-2">
-<p class="B6" >Virtual SWAMP | Barcelona MMXXIII </p>
+<p class="B6" >Virtual ART - SWAMP | Barcelona MMXXIII </p>
 
   
 

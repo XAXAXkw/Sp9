@@ -12,13 +12,7 @@ export default createStore({
     }
   },
   actions: {
-    getCat:
-    async function( { commit }){
-      const data = await fetch('@/assets/FullCat.json');
-      this.FullCat = await data.json();
-      commit('fillCat',this.FullCat);
 
-    }
   },
   modules: {
   }
