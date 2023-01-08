@@ -162,6 +162,7 @@ export default{
 .Pic {
   background-color: black;
   height: 400px;
+  width:100%;
 
 }
 </style>

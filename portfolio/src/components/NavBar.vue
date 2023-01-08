@@ -26,12 +26,12 @@
           <ul class="navbar-nav me-auto mb-4 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">
-                <router-link to="/">START</router-link></a
+                <router-link to="/">HOME</router-link></a
               >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <router-link to="/about"> Score</router-link>
+                <router-link to="/about"> About</router-link>
               </a>
             </li>
             <li class="nav-item dropdown">
@@ -42,7 +42,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Items
+                Catalogue
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Computed</a></li>
