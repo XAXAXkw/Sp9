@@ -25,7 +25,7 @@
 
 <style lang="scss" scoped>
 .footer{
-  height: 80px;
+  height: 2em;
 background-color: rgb(42, 74, 63);
 max-width: 100%;
 margin: 0 !important;

@@ -20,8 +20,9 @@
       
       <p>102</p>
 <div class="container">
-<div class="col d-flexbox border p-1">
-<div><h6>    Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6>
+<div class="col d-flexbox border border-success rounded rounded-2 p-1 h6">
+<div><h6 class="text-success">    Lorem ipsum dolor sit amet,
+<br /> consectetur adipisicing elit.</h6>
 
 
 </div>
@@ -31,7 +32,7 @@
      </div>
       <hr />
 
-      <div class="pic">
+      <div class="pic ">
         PIC: 327 {{ store.name }}
       </div>
     </div>
@@ -80,6 +81,10 @@ p {
   padding: 10px;
 }
 h6{
-  font-size: 0.5em;
+  font-size: 0.8vmax;
+  white-space: nowrap;
+  overflow: hidden;
+        white-space: nowrap;
+
 }
 </style>
