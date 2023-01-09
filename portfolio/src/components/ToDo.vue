@@ -1,9 +1,10 @@
 <template>
   <div class="container template ">  <p style="color:rgb(42, 74, 63)">EXISTENCIAL DOUBTS? - CLIMATIC ANGUISH? - SYSTEMIC DEPRESSION?</p>
   <div class="row">
+    <div class="Pic col-8"><h1>FAQS</h1></div>
      <div class="col-12  ">         <div class="d-blockbg bg-warning  border border-danger">        <input class="inputDark" placeholder="Why are we here?..."/>
         <button @click="addTodo" class="btn btn-sm text-success m-1 text-danger">ASK ME ANYTHING</button></div>
-     <div class="col-10  border border-success w-100 p-2"><h4>...WHATEVER YOU NEED. I'm not joking.</h4> This is SERIOUS.</div>   <h1>GET<br /> ANSWERS<br /> NOW!</h1>
+     <div class="col-10  border border-success w-100 p-2"><h4>...WHATEVER YOU NEED. I'm not joking.</h4> This is SERIOUS.</div>   <h3>GET<br /> ANSWERS<br /> NOW!</h3>
      
 <div class="thingreen w-50 m-auto">cont
 <div class="row border">row
@@ -142,8 +143,9 @@ export default {
 
 h1{
   text-shadow: 1px 1px 20px aquamarine;
-  font-size: 10vmin;
-  padding: 2em;
+  font-size: 20vmin;
+  padding:0.2em;
+
 }
 
 

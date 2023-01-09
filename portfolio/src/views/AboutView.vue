@@ -178,7 +178,7 @@ export default{
 }
   h1{
   text-shadow: 1px 1px 20px aquamarine;
-  font-size: 10vmin;
+  font-size: 15vmin;
   padding: 0.1em;
 }
 </style>
