@@ -1,5 +1,5 @@
 <template>
-  <div class="container ">
+  <div class="container template">
 
 
 
@@ -160,7 +160,7 @@ export default{
 </script>
 <style lang="scss" scoped>
 .Pic {
-  background-color: black;
+
   height: 400px;
   width:100%;
 

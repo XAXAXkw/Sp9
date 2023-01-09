@@ -134,7 +134,7 @@ a:hover {
 
 .badge{
   margin-left: 20%;
-  margin-top:1em;
+
   position: absolute;
   z-index:1;
   margin-right:5px;

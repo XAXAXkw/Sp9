@@ -38,7 +38,7 @@ class="wrapped">
         name:'VisorComp',
         data(){
             return{
-                showV:true
+                showV:false
             }
         }
     }

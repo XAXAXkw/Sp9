@@ -1,12 +1,13 @@
 <template>
-  <div>
-    <h1>WHY NOT?</h1>
+  <div class="container template d-flexbox">
+  <p style="color:rgb(42, 74, 63)">EXISTENCIAL DOUBTS? - CLIMATIC ANGUISH? - SYSTEMIC DEPRESSION?</p>
+    <h1>GET ANSWERS NOW!</h1>
 
     <div class="container d-flex justify-content-evenly">
       <div>
         <img class="imgB" src="@/assets/banana.svg" />
         <div class="container thingreen">
-        <h4>Why are you bald?</h4>
+        <h4>Why are you bald, {{ store.name }}?</h4>
         </div>
 
 <hr />
@@ -73,7 +74,7 @@
 
 <script>
 
-
+import { useCounterStore } from '@/stores/alertStore.js'
 
 const todos = [
     {
@@ -82,13 +83,15 @@ const todos = [
         isFinished: false,
     }
 ]
+const store = useCounterStore();
 
 
 export default {
+    
   name: "ToDo",
   data(){
     return{
-        todos
+        todos,store
     }
   },
   methods:{
@@ -100,11 +103,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.thingreen{
-    border:solid 0.5px green;
-    padding:10px;
-    border-radius:1em;
-}
 
 .inputDark {
   margin: 15px;
@@ -124,9 +122,14 @@ h1{
       padding:1em;
 }
 
+
+p{
+    font-size: 0.4em;
+}
 .LIST {
   margin-left: 20%;
   font-size: 1.5vmax;
+  margin-bottom: 20%;
 }
 ol{
       list-style:decimal;

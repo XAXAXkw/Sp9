@@ -1,5 +1,131 @@
+body .template {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(51, 51, 51, 0.305);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.1em, rgba(0, 255, 0, 0.041)), color-stop(0.1em, transparent)), -webkit-gradient(linear, left top, right top, color-stop(0.1em, rgba(0, 255, 0, 0.068)), color-stop(0.1em, transparent));
+  background-image: linear-gradient(rgba(0, 255, 0, 0.041) 0.1em, transparent 0.1em), linear-gradient(90deg, rgba(0, 255, 0, 0.068) 0.1em, transparent 0.1em);
+  background-size: 3em 3em;
+}
+
+.template {
+  margin: 0;
+  padding: 0;
+  min-width: 100% !important;
+  min-height: 100% !important;
+  background: rgba(51, 51, 51, 0.305);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.1em, rgba(0, 255, 0, 0.041)), color-stop(0.1em, transparent)), -webkit-gradient(linear, left top, right top, color-stop(0.1em, rgba(0, 255, 0, 0.068)), color-stop(0.1em, transparent));
+  background-image: linear-gradient(rgba(0, 255, 0, 0.041) 0.1em, transparent 0.1em), linear-gradient(90deg, rgba(0, 255, 0, 0.068) 0.1em, transparent 0.1em);
+  background-size: 3em 3em;
+}
+
+.thingreen {
+  border: solid 0.5px green;
+  padding: 10px;
+  border-radius: 1em;
+}
+
 body {
-  background-image: url("./bkg_weed_float.png");
-  background-repeat: no-repeat;
+  background-color: #000301;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes example {
+  from {
+    background-color: #b3ff00;
+  }
+  to {
+    background-color: #153700;
+  }
+}
+
+@keyframes example {
+  from {
+    background-color: #b3ff00;
+  }
+  to {
+    background-color: #153700;
+  }
+}
+
+/* The element to apply the animation to */
+@-webkit-keyframes example2 {
+  0% {
+    background-color: rgba(170, 255, 0, 0);
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: #0dff00;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: rgba(179, 255, 0, 0.112);
+    left: 200em;
+    top: 0px;
+  }
+  75% {
+    background-color: green;
+    right: 500px;
+    top: 0px;
+  }
+  100% {
+    background-color: #280721;
+    left: 0px;
+    top: 0px;
+  }
+}
+@keyframes example2 {
+  0% {
+    background-color: rgba(170, 255, 0, 0);
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: #0dff00;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: rgba(179, 255, 0, 0.112);
+    left: 200em;
+    top: 0px;
+  }
+  75% {
+    background-color: green;
+    right: 500px;
+    top: 0px;
+  }
+  100% {
+    background-color: #280721;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+/* The element to apply the animation to */
+p, h6 {
+  width: 100em;
+  position: relative;
+  background-color: rgba(170, 255, 0, 0);
+  -webkit-animation-name: example2;
+          animation-name: example2;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+h1 {
+  width: 100em;
+  position: relative;
+  background-color: rgba(170, 255, 0, 0);
+  -webkit-animation-name: example2;
+          animation-name: example2;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 /*# sourceMappingURL=main.css.map */

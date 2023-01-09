@@ -18,7 +18,7 @@ export default {
 <style>
 #app {
   font-family: "Press Start 2P", cursive;
-  background-color: black;
+
   color: #9dff00;
 }
 h6,
