@@ -1,12 +1,12 @@
 <template>
     <div>
         <div class="container footer d-flex justify-content-evenly border align-items-center border-success p-1">
-    <a href="https://www.upwork.com/freelancers/~012894ee17b3a6616a"><img style="width:20px" alt="Vue logo" src="../assets/upwork2.png">  </a>
-    <img style="width:20px;height:min-content" alt="Vue logo" src="../assets/behance-xxl.png">
+    <a href="https://www.upwork.com/freelancers/~012894ee17b3a6616a" target="_blank"><img style="width:20px" alt="Vue logo" src="../assets/upwork2.png">  </a>
+    <a href="https://www.behance.net/xaxax" target="_blank"><img style="width:20px;height:min-content" alt="Vue logo" src="../assets/behance-xxl.png"/></a>
     <img style="width:20px;height:min-content" alt="Vue logo" src="../assets/logo2.png">
 
 
-    <a href="https://github.com/XAXAXkw"><img style="width:20px" alt="Vue logo" src="../assets/git.png">  </a>
+    <a href="https://github.com/XAXAXkw" target="_blank"><img style="width:20px" alt="Vue logo" src="../assets/git.png">  </a>
 
 
    <img style="width:20px;height:min-content" alt="Vue logo" src="../assets/tube.png">  

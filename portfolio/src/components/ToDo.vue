@@ -1,9 +1,37 @@
 <template>
-  <div class="container template d-flexbox">
-  <p style="color:rgb(42, 74, 63)">EXISTENCIAL DOUBTS? - CLIMATIC ANGUISH? - SYSTEMIC DEPRESSION?</p>
-    <h1>GET ANSWERS NOW!</h1>
+  <div class="container template ">  <p style="color:rgb(42, 74, 63)">EXISTENCIAL DOUBTS? - CLIMATIC ANGUISH? - SYSTEMIC DEPRESSION?</p>
+  <div class="row">
+     <div class="col-12  ">         <div class="d-blockbg bg-warning  border border-danger">        <input class="inputDark" placeholder="Why are we here?..."/>
+        <button @click="addTodo" class="btn btn-sm text-success m-1 text-danger">ASK ME ANYTHING</button></div>
+     <div class="col-10  border border-success w-100 p-2"><h4>...WHATEVER YOU NEED. I'm not joking.</h4> This is SERIOUS.</div>   <h1>GET<br /> ANSWERS<br /> NOW!</h1>
+     
+<div class="thingreen w-50 m-auto">cont
+<div class="row border">row
+<div class="col border">col0
+<img src="../assets/tech1icon.gif" style="height:7em"/>
+</div>
+<div class="col border">col1</div>
+<div class="col border">col2
+<div class="container ">container
+<div class="row ">row1</div>
+<div class="row ">row2</div>
+</div>
+</div>
+</div>
 
-    <div class="container d-flex justify-content-evenly">
+</div>
+</div>
+        
+
+
+
+  </div>
+
+   
+
+
+
+    <div class="col-12  d-flex justify-content-evenly">
       <div>
         <img class="imgB" src="@/assets/banana.svg" />
         <div class="container thingreen">
@@ -11,19 +39,6 @@
         </div>
 
 <hr />
-<div class="thingreen">cont
-<div class="row border">row
-<div class="col border">col0</div>
-<div class="col border">col1</div>
-<div class="col border">col2
-<div class="container border">container
-<div class="row border">row1</div>
-<div class="row border">row2</div>
-</div>
-</div>
-</div>
-
-</div>
 
 
 
@@ -31,10 +46,6 @@
 
 
 
-
-        
-        <div class="d-flex">        <input class="inputDark" placeholder="Why are we here?..."/>
-        <button @click="addTodo" class="btn btn-sm text-success m-1">ASK ME ANYTHING</button></div>
 
       </div>
     </div>
@@ -70,11 +81,14 @@
       </ol>
     </div>
   </div>
+  <br/>
+  <hr />
 </template>
 
 <script>
 
 import { useCounterStore } from '@/stores/alertStore.js'
+
 
 const todos = [
     {
@@ -86,6 +100,14 @@ const todos = [
 const store = useCounterStore();
 
 
+
+
+
+
+
+
+
+
 export default {
     
   name: "ToDo",
@@ -94,12 +116,13 @@ export default {
         todos,store
     }
   },
+  computed:{}
+
+,
   methods:{
-    addTodo(){
- 
-    }
+
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>
@@ -118,8 +141,9 @@ export default {
 }
 
 h1{
-      text-shadow: 1px 1px 20px aquamarine;
-      padding:1em;
+  text-shadow: 1px 1px 20px aquamarine;
+  font-size: 10vmin;
+  padding: 2em;
 }
 
 
@@ -129,10 +153,11 @@ p{
 .LIST {
   margin-left: 20%;
   font-size: 1.5vmax;
-  margin-bottom: 20%;
+  margin-bottom: 500px;
 }
 ol{
       list-style:decimal;
+    
 }
 li {
   
@@ -150,4 +175,8 @@ h4{
 .imgB{
     margin:2em;
     width:15vmax;
-}</style>
+}
+
+
+
+</style>

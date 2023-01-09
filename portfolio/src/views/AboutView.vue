@@ -4,8 +4,19 @@
 
 
 
-    <div class="container w-75"><SnapShot />
-      <div class="Pic col-8">BIO</div>
+    <div class="container"><SnapShot />
+   <div class="row">
+   <div class="col-4">      <div class="Pic col-8"><h1>BIO</h1></div></div>
+   <div class="col-8 d-flexbox">     <div class="container">  
+    <img  style="height:10em;margin:0.1em" src="../assets/fruit1icon.gif"/>
+    <br />
+    <img  style="height:5em;margin:0.1em" src="../assets/fruit1icon.gif"/>
+   </div></div>
+
+</div>
+
+ 
+  
 
       <div class="col-12 col-md-4 border border-success p-2 rounded">
         b.-text
@@ -164,5 +175,10 @@ export default{
   height: 400px;
   width:100%;
 
+}
+  h1{
+  text-shadow: 1px 1px 20px aquamarine;
+  font-size: 10vmin;
+  padding: 0.1em;
 }
 </style>

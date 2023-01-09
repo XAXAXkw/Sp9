@@ -38,6 +38,12 @@ const routes = [
     name: 'todo',
     component: () => import('@/components/ToDo.vue')
   }
+  ,
+  {
+    path: '/shop',
+    name: 'shop',
+    component: () => import('@/components/ShopComp.vue')
+  }
 ]
 
 const router = createRouter({

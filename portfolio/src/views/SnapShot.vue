@@ -29,19 +29,21 @@ export default { name: "SnapShot" };
 
 .snapper{
 
-margin-left:30%;
+margin-top:30em;
+margin-left: 50em;
     position:fixed;
+    display: inline-flexbox;
     z-index:10;
     display: flexbox;
     align-items: center;
-    width:500px;
-    height:500px;
-    padding:25px;
+    width:400px;
+    height:400px;
+    padding:2em;
     border-radius: 25px;
-    box-shadow: 1px 1px 100px rgb(13, 255, 0);
+    box-shadow: 1px 1px 100px rgb(140, 255, 0);
     
 
-    background-color: rgba(47, 255, 0, 0.655);
+    background-color: rgba(22, 119, 0, 0.906);
 }
 
 button{

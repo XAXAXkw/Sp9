@@ -6,8 +6,8 @@
 </div>
     <div class="container thingreen m-auto mt-4 w-75 d-flexbox">
       <p style="color: rgb(42, 74, 63);">Artwork</p>
-      <h1>327</h1>
-      CARD HEADER
+      <h1>32{{ store.count }}</h1>
+      CARD HEADER: '{{ store.name }}'
       <hr />
       
       <div class="container w-50 m-auto p-1 d-flexbox text-center">
@@ -28,7 +28,7 @@
       <hr />
 
       <div class="pic">
-        PIC: 327
+        PIC: 327 {{ store.name }}
       </div>
     </div>
     <div class="container m-4 p-4">ivancuadros MMXXIII</div>

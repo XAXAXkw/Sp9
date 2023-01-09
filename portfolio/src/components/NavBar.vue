@@ -27,6 +27,9 @@
 
            
             <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                <router-link to="/shop">SHOP</router-link></a
+              >
             
               <a class="nav-link active" aria-current="page" href="#">
                 <router-link to="/todo">FAQS</router-link></a
@@ -86,7 +89,7 @@
         </div>
       </div>
     </nav>
-    <div class="bg-dark d-flex-end p-2">
+    <div class="d-flex justify-content-evenly">
 <p class="B6" >Virtual ART - SWAMP | Barcelona MMXXIII </p>    <div class="container"> ivancuadros.com<img style="height: 25px" src="@/assets/cursor.gif" /> </div>
 
   
@@ -114,7 +117,7 @@ a {
   letter-spacing: normal;
 }
 .navbar {
-  max-width: 100%;
+
   background: rgb(19, 65, 29);
   background: linear-gradient(
     153deg,
@@ -144,6 +147,6 @@ a:hover {
 }
 .B6{
   color:green;
-  text-align:right;
+
 }
 </style>
