@@ -1,5 +1,9 @@
 <template>
-  <div>home</div>
+  <div class="template2">
+  
+  
+  
+  home</div>
   <!--div>
 
     <iframe  style="border:none;margin:auto" width="100%" height="315" src="https://www.youtube.com/embed/8phwsgBFxHg?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; " allowfullscreen></iframe>
@@ -48,15 +52,17 @@ export default {
 }
 </script>
 <style type="scss">
-iframe{
-  border:solid 1px yellowgreen;
+.template2{
+  position: absolute;
+  background-image: url('../assets/bkg_expo.png');
+opacity: 0.2;
+  background-position:center ;
+  background-repeat: no-repeat;
+  display: flow-root;
+min-height:100%;
+min-width:100%;
+margin:0px;
 
-  margin:0.5em;
-  background-color: black;
-  box-shadow: 1px 1px 100px rgba(127, 255, 212, 0.466);
-
-  opacity:0.3;
-  
 }
 
 </style>
