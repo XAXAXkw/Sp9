@@ -16,8 +16,9 @@
     animation-duration: 2s;
 
     
-    min-width: 100% !important;
+    
     min-height: 100% !important;
+    max-width: 1024px;
 
    
    
@@ -37,14 +38,7 @@
   
   /* The element to apply the animation to */
 
-  @keyframes example2 {
-    0%   {background-color:rgba(170, 255, 0, 0); left:0px; top:0px;}
-    25%  {background-color:rgb(13, 255, 0); left:200px; top:0px;}
-    50%  {background-color:rgba(179, 255, 0, 0.112); left:200em; top:0px;}
-    75%  {background-color:green; right:500px; top:0px;}
-    100% {background-color:rgb(40, 7, 33); left:0px; top:0px;}
-  }
-  
+
   /* The element to apply the animation to */
   p,h6{
     width: 100em;
@@ -54,3 +48,11 @@
     animation-name: example2;
     animation-duration: 1s;
   }
+  @keyframes example2 {
+    0%   {background-color:rgba(170, 255, 0, 0); left:0px; top:200px;}
+    25%  {background-color:rgb(13, 255, 0); left:0px; top:0px;}
+    50%  {background-color:rgba(179, 255, 0, 0.112); left:0px; top:0px;}
+    75%  {background-color:green; left:0px; top:100px;}
+    100% {background-color:rgb(40, 7, 33); left:0px; top:0px;}
+  }
+  

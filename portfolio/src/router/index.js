@@ -5,7 +5,7 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: () => import('@/components/ShopCard.vue')
+    component: () => import('@/components/ShopComp.vue')
   },
   {
     path: '/about',

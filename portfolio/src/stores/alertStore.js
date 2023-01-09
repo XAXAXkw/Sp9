@@ -18,11 +18,12 @@ export const useCounterStore = defineStore('counter', {
 
   //data
 
-  state: () => ({ count: 0, name: 'Eduardo' }),
+  state: () => ({ count: 0, name: 'Eduardo', ShowCart:true }),
 
   //computed
   getters: {
     doubleCount: (state) => state.count * 2,
+
   },
 
 
@@ -31,6 +32,9 @@ export const useCounterStore = defineStore('counter', {
     increment() {
       this.count++
     },
+    alerter(){
+
+    }
   },
 })
 

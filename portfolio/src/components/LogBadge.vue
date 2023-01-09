@@ -50,7 +50,7 @@
   margin-left: 2%;
   margin-top:1em;
   position: absolute;
-  z-index:1;
+  z-index:50;
 
   border:solid 1px green;
 
@@ -63,6 +63,13 @@
     animation-fill-mode: forwards;
 
 }
+@media only screen and (max-width: 850px){
+  .badge{
+    margin-left: 62%;
+    }
+}
+
+
 
 
 @keyframes example2 {

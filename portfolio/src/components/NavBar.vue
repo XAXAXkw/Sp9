@@ -5,7 +5,10 @@
 
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <div class="container d-flex">
+        <div class="container d-block">
+
+
+
           <div></div>
 
           <div class="container p-4"></div>
@@ -32,7 +35,7 @@
               >
             
               <a class="nav-link active" aria-current="page" href="#">
-                <router-link to="/shopcard">SHOP</router-link></a
+                <router-link to="/shopcard">CART</router-link></a
               >
             
               <a class="nav-link active" aria-current="page" href="#">
@@ -74,7 +77,12 @@
             <li class="nav-item">
             
             <a class="nav-link active" aria-current="page" href="#">
-              <router-link to="/"><button  class="btn btn-sm btn-success">UPWORK</button></router-link></a
+              <router-link to="/"><button  class="btn btn-sm btn-success">
+              
+                
+                
+                
+                FOR HIRE</button></router-link></a
             >
           </li>
 

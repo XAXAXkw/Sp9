@@ -1,17 +1,17 @@
 <template>
     <div>
-    <div class=" container" >
-<div class="container border">
+    <div class=" container " >
+<div class="container ">
 
 1
-<div class="row border">|<h1>SHOP</h1>| <div class="container ">
+<div class="row ">|<h1>SHOP</h1>| <div class="container ">
       <h6>
      <a href="#" style="color:green">-|BACK|-</a>|<a href="#" style="color:red">-|NEXT|-</a> 
       </h6>
       </div>
 
 
-<div class="container wrapper border d-flexbox">
+<div class="container wrapper  d-flexbox">
 
     
     <div class="card thingreen">
@@ -63,7 +63,7 @@
            <br />
            <br />
            <br />
-           
+
         </div>
         </div>
 
