@@ -27,8 +27,12 @@
 
            
             <li class="nav-item">
+              <a class="nav-link active" target="_new" href="../shop/index.html">
+                SHOP</a
+              >
+            
               <a class="nav-link active" aria-current="page" href="#">
-                <router-link to="/shop">SHOP</router-link></a
+                <router-link to="/shopcard">SHOP</router-link></a
               >
             
               <a class="nav-link active" aria-current="page" href="#">

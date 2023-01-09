@@ -1,5 +1,5 @@
 <template>
-  <div class="container template">
+  <div class="container  template">
 
 
 
@@ -18,27 +18,33 @@
  
   
 
-      <div class="col-12 col-md-4 border border-success p-2 rounded">
-        b.-text
-        <div class="row m-auto about">
+      <div class="col-12 col-md-4 border border-success p-4 m-auto rounded d-block">
+       <h6>DEC 17 12 1975</h6>
+        <div class="row m-auto d-flex about">
           <div>
             <div>
               <div class="row">
                 <div class="colborder">
-                  <div class="container border bg-success"><h1>1975</h1></div>
+                  <div class="container bg-dark border border-danger rounded-4 bg-success "><h3>1975</h3></div>
                 </div>
               </div>
-              <div class="colborder">
-                <div class="container">
+              <div class="colborder m-4">
+                <div class="container d-block w-75 ">
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-                    minima saepe consectetur animi magni officiis maxime vel placeat?
+                    Lorem ipsum dolor sit amet 
                   </p>
-                  <h6>Consequuntur provident</h6>
-                  <h5>delectus omnis</h5>
+                  <h5>Consequuntur provident</h5>
+                  <h5 style="color:red; text-shadow:1px 0px 5px hotpink">delectus omnis</h5>
                 </div>
               </div>
             </div>
+
+
+
+
+
+
+
 
             <div class="container border-light">
               <div class="row">
@@ -58,95 +64,7 @@
               </div>
             </div>
 
-            <div class="container border-light">
-              <div class="row">
-                <div class="colborder">
-                  <div class="container border bg-success"><h1>1990</h1></div>
-                </div>
-              </div>
-              <div class="colborder">
-                <div class="container">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-                    minima saepe consectetur animi magni officiis maxime vel placeat?
-                  </p>
-                  <h6>Consequuntur provident</h6>
-                  <h5>delectus omnis</h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="container border-light">
-              <div class="row">
-                <div class="colborder">
-                  <div class="container border bg-success"><h1>2000</h1></div>
-                </div>
-              </div>
-              <div class="colborder">
-                <div class="container">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-                    minima saepe consectetur animi magni officiis maxime vel placeat?
-                  </p>
-                  <h6>Consequuntur provident</h6>
-                  <h5>delectus omnis</h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="container border-light">
-              <div class="row">
-                <div class="colborder">
-                  <div class="container border bg-success"><h1>2005</h1></div>
-                </div>
-              </div>
-              <div class="colborder">
-                <div class="container">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-                    minima saepe consectetur animi magni officiis maxime vel placeat?
-                  </p>
-                  <h6>Consequuntur provident</h6>
-                  <h5>delectus omnis</h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="container border-light">
-              <div class="row">
-                <div class="colborder">
-                  <div class="container border bg-success"><h1>2010</h1></div>
-                </div>
-              </div>
-              <div class="colborder">
-                <div class="container">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-                    minima saepe consectetur animi magni officiis maxime vel placeat?
-                  </p>
-                  <h6>Consequuntur provident</h6>
-                  <h5>delectus omnis</h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="container border-light">
-              <div class="row">
-                <div class="colborder">
-                  <div class="container border bg-success"><h1>2020</h1></div>
-                </div>
-              </div>
-              <div class="colborder">
-                <div class="container">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-                    minima saepe consectetur animi magni officiis maxime vel placeat?
-                  </p>
-                  <h6>Consequuntur provident</h6>
-                  <h5>delectus omnis</h5>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
         <hr />
@@ -176,7 +94,7 @@ export default{
   width:100%;
 
 }
-  h1{
+  h1,h3{
   text-shadow: 1px 1px 20px aquamarine;
   font-size: 15vmin;
   padding: 0.1em;

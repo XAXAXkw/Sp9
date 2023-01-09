@@ -4,13 +4,13 @@
     00000
   <div class="inner"></div>
 </div>
-    <div class="container thingreen m-auto mt-4 w-75 d-flexbox">
+    <div class="container thingreen m-auto w-75 w-md-50 w-lg-50 d-flexbox">
       <p style="color: rgb(42, 74, 63);">Artwork</p>
       <h1>32{{ store.count }}</h1>
       CARD HEADER: '{{ store.name }}'
       <hr />
       
-      <div class="container w-50 m-auto p-1 d-flexbox text-center">
+      <div class="container ">
       <h6>
      <a href="#" style="color:green">-|BACK|-</a>|<a href="#" style="color:red">-|NEXT|-</a> 
       </h6>
@@ -20,11 +20,15 @@
       
       <p>102</p>
 <div class="container">
-      <h6  style="color:  rgb(42, 74, 63)">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate animi sequi
-        aperiam temporibus? Recusandae, iure hic. Distinctio facilis id, corporis veniam
-        laboriosam exercitationem, culpa inventore, qui voluptate quaerat vero accusamus?
-      </h6></div>
+<div class="col d-flexbox border p-1">
+<div><h6>    Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6>
+
+
+</div>
+
+    
+</div>
+     </div>
       <hr />
 
       <div class="pic">
