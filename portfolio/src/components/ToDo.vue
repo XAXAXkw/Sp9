@@ -6,18 +6,25 @@
         <button @click="addTodo" class="btn btn-sm text-success m-1 text-danger">ASK ME ANYTHING</button></div>
      <div class="col-10  border border-success w-100 p-2"><h4>...WHATEVER YOU NEED. I'm not joking.</h4> This is SERIOUS.</div>   <h3>GET<br /> ANSWERS<br /> NOW!</h3>
      
-<div class="thingreen w-50 m-auto">cont
-<div class="row border">row
-<div class="col border">col0
-<img src="../assets/tech1icon.gif" style="height:7em"/>
+<div class="thingreen w-75 w-lg-50 m-auto"><h3>result:</h3>
+<div class="row "><hr />
+<div class="col border border-success p-2"><p>Your Microplastic Levels</p>
+<img src="../assets/tech1icon.gif" style="height:7em"/>327%
 </div>
-<div class="col border">col1</div>
-<div class="col border">col2
+<div class="col">positive</div>
+<div class="col bg-success"><h1>Yes</h1>
 <div class="container ">container
 <div class="row ">row1</div>
 <div class="row ">row2</div>
+<div class="row ">row1</div>
+
 </div>
+
+
+
 </div>
+<hr />
+
 </div>
 
 </div>
@@ -143,7 +150,7 @@ export default {
 
 h1{
   text-shadow: 1px 1px 20px aquamarine;
-  font-size: 20vmin;
+  font-size: 10vmin;
   padding:0.2em;
 
 }

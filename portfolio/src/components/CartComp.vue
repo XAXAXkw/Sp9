@@ -32,13 +32,12 @@ c
 </template>
 
 <script>
-import alertStore from '../stores/alertStore.js';
 
     export default {
         name:'CartComp',
         data(){
             return{
-                alertStore,ShowCart:true
+                ShowCart:true
             }
         }
 

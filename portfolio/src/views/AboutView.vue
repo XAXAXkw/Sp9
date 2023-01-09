@@ -18,14 +18,14 @@
  
   
 
-      <div class="col-12 col-md-4 border border-success p-4 m-auto rounded d-block">
-       <h6>DEC 17 12 1975</h6>
+      <div class="col-12 col-md-4 p-4 m-auto rounded d-block">
+       <h6>date:</h6>
         <div class="row m-auto d-flex about">
           <div>
             <div>
               <div class="row">
                 <div class="colborder">
-                  <div class="container bg-dark border border-danger rounded-4 bg-success "><h3>1975</h3></div>
+                  <div class="container bg-dark border border-danger rounded-4 bg-success "><h3>2023</h3></div>
                 </div>
               </div>
               <div class="colborder m-4">
@@ -49,7 +49,7 @@
             <div class="container border-light">
               <div class="row">
                 <div class="colborder">
-                  <div class="container border bg-success"><h1>1980</h1></div>
+                  <div class="container labelio"><h1>2020</h1></div>
                 </div>
               </div>
               <div class="colborder">
@@ -65,6 +65,202 @@
             </div>
 
             
+
+
+
+            <div class="container border-light">
+              <div class="row">
+                <div class="colborder">
+                  <div class="container border bg-success"><h1>VIRUS RELEASED</h1></div>
+                </div>
+              </div>
+              <div class="colborder">
+                <div class="container">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+                    minima saepe consectetur animi magni officiis maxime vel placeat?
+                  </p>
+                  <h6>Consequuntur provident</h6>
+                  <h5>delectus omnis</h5>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="container border-light">
+              <div class="row">
+                <div class="colborder">
+                  <div class="container border bg-success"><h1>2016</h1></div>
+                </div>
+              </div>
+              <div class="colborder">
+                <div class="container">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+                    minima saepe consectetur animi magni officiis maxime vel placeat?
+                  </p>
+                  <h6>Consequuntur provident</h6>
+                  <h5>delectus omnis</h5>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div class="container border-light">
+              <div class="row">
+                <div class="colborder">
+                  <div class="container border bg-success"><h1>2006</h1></div>
+                </div>
+              </div>
+              <div class="colborder">
+                <div class="container">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+                    minima saepe consectetur animi magni officiis maxime vel placeat?
+                  </p>
+                  <h6>Consequuntur provident</h6>
+                  <h5>delectus omnis</h5>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div class="container border-light">
+              <div class="row">
+                <div class="colborder">
+                  <div class="container labelio"><h1>2003</h1></div>
+                </div>
+              </div>
+              <div class="colborder">
+                <div class="container">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+                    minima saepe consectetur animi magni officiis maxime vel placeat?
+                  </p>
+                  <h6>Consequuntur provident</h6>
+                  <h5>delectus omnis</h5>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div class="container border-light">
+              <div class="row">
+                <div class="colborder">
+                  <div class="container border bg-success"><h1>2000</h1></div>
+                </div>
+              </div>
+              <div class="colborder">
+                <div class="container">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+                    minima saepe consectetur animi magni officiis maxime vel placeat?
+                  </p>
+                  <h6>Consequuntur provident</h6>
+                  <h5>delectus omnis</h5>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div class="container border-light">
+              <div class="row">
+                <div class="colborder">
+                  <div class="container border bg-success"><h1>1999</h1></div>
+                </div>
+              </div>
+              <div class="colborder">
+                <div class="container">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+                    minima saepe consectetur animi magni officiis maxime vel placeat?
+                  </p>
+                  <h6>Consequuntur provident</h6>
+                  <h5>delectus omnis</h5>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div class="container border-light">
+              <div class="row">
+                <div class="colborder">
+                  <div class="container labelio"><h1>1995</h1></div>
+                </div>
+              </div>
+              <div class="colborder">
+                <div class="container">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+                    minima saepe consectetur animi magni officiis maxime vel placeat?
+                  </p>
+                  <h6>Consequuntur provident</h6>
+                  <h5>delectus omnis</h5>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+            <h6>DEC 17 12 1975</h6>
+        <div class="row m-auto d-flex about">
+          <div>
+            <div>
+              <div class="row">
+                <div class="colborder">
+                  <div class="container bg-dark border border-danger rounded-4 bg-success "><h3>1975</h3></div>
+                </div>
+              </div>
+              <div class="colborder m-4">
+                <div class="container d-block w-75 ">
+                  <p>
+                    Lorem ipsum dolor sit amet 
+                  </p>
+                  <h5>Consequuntur provident</h5>
+                  <h5 style="color:red; text-shadow:1px 0px 5px hotpink">delectus omnis</h5>
+                </div>
+              </div>
+            </div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           </div>
         </div>
         <hr />
@@ -96,7 +292,29 @@ export default{
 }
   h1,h3{
   text-shadow: 1px 1px 20px aquamarine;
-  font-size: 15vmin;
+  font-size: 5vmin;
   padding: 0.1em;
+}
+
+@media only screen and (max-width: 500px){
+  h1{
+    font-size: 15vmin;
+    }
+}
+@media only screen and (max-width: 300px){
+  h1{
+    font-size: 25vmin;
+    }
+}
+
+.colborder{
+ text-shadow: 1px 1px 50px yellow;
+  padding:2em;
+
+}
+.labelio{
+background-color: green;
+border-radius: 2em;
+
 }
 </style>

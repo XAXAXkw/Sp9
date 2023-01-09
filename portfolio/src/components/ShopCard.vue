@@ -40,7 +40,7 @@
     
     
     <hr />
-    <button>BUY</button>
+    <button onclick="alert(id)" id="1">BUY</button>
     </div>
 
 
@@ -79,7 +79,7 @@
     
     
     <hr />
-    <button>BUY</button>
+    <button onclick="alert(id)" id="2">BUY</button>
     </div>
 
 
@@ -211,7 +211,7 @@ max-height:450px;
 height:30vmax;
 width:20vmax;
 background-color: green;
-
+background-image: url('../assets/paint/IMG_7372-1.JPG');
 margin:auto;
 padding:0em;
 }

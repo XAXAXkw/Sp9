@@ -9,14 +9,25 @@
       </div>
       <ShopCard />
 
+  
     </div>
 </template>
 
 <script>
 import ShopCard from './ShopCard.vue'
 import CartComp from './CartComp.vue'
+
+
+import catalogueStore from '../stores/catalogueStore'
+const store = catalogueStore()
+
     export default {
         name:'ShopComp',
+        data(){
+            return{
+                store
+            }
+        },
         components:{
             ShopCard,CartComp
         }

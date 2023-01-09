@@ -31,6 +31,7 @@ return{
   font-family: "Press Start 2P", cursive;
 margin-bottom: 20em;
   color: #9dff00;
+
 }
 h6,
 p {
