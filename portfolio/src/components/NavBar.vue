@@ -30,8 +30,8 @@
 
            
             <li class="nav-item">
-              <a class="nav-link active" target="_new" href="../shop/index.html">
-                SHOP</a
+              <a class="nav-link active" aria-current="page" href="#">
+                <router-link to="/shop">SHOP</router-link></a
               >
             
               <a class="nav-link active" aria-current="page" href="#">
@@ -114,11 +114,12 @@
 
 <script>
 import FooterComp from '@/components/FooterComp.vue'
-import LogBadge from '@/components/LogBadge.vue'
+//import LogBadge from '@/components/LogBadge.vue'
 export default {
   name: "NavBar",
 components:{
-  FooterComp,LogBadge
+  FooterComp,
+  //LogBadge
 }
 };
 </script>

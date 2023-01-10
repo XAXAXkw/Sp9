@@ -98,13 +98,6 @@
 import { useCounterStore } from '@/stores/alertStore.js'
 
 
-const todos = [
-    {
-        id:1,
-        text:'do this',
-        isFinished: false,
-    }
-]
 const store = useCounterStore();
 
 
@@ -121,7 +114,7 @@ export default {
   name: "ToDo",
   data(){
     return{
-        todos,store
+        store
     }
   },
   computed:{}

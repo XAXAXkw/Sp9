@@ -16,16 +16,20 @@
 <script>
 import ShopCard from './ShopCard.vue'
 import CartComp from './CartComp.vue'
+import { useCounterStore } from '@/stores/catalogueStore.js'
 
 
-import catalogueStore from '../stores/catalogueStore'
-const store = catalogueStore()
+const store = useCounterStore();
+
 
     export default {
         name:'ShopComp',
+        computed:{
+       
+        },
         data(){
             return{
-                store
+              store
             }
         },
         components:{
