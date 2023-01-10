@@ -16,6 +16,11 @@
   border-radius: 1em;
 }
 
+.redneon {
+  color: red;
+  text-shadow: 1px 0px 5px hotpink;
+}
+
 @-webkit-keyframes example {
   from {
     background-color: #b3ff00;

@@ -1,4 +1,5 @@
 <template>
+  <div class="jungle">00</div>
   <NavBar />
 <VisorComp />
   <router-view />
@@ -34,6 +35,12 @@ return{
   color: #9dff00;
 
 
+}
+
+.jungle{
+  background-image: url('./assets/bkg_weed_float.png');
+  position: absolute;
+  background-color: #9dff00;
 }
 h6,
 p {
