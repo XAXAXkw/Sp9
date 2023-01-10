@@ -1,9 +1,10 @@
 <template>
     <div>
 
-    <div class="badge" onclick="v-show=!v-show"><h3>Login</h3></div>
+    <div class="badge2">Login</div>
 
-        <div class="badge" onclick="v-show=!v-show" v-show="false">        
+        <div class="badge">  
+              
         <div class="inputBadge w-50 d-flexbox justify-content-evenly">
         
         USER <br /><input class="input1"/>
@@ -47,16 +48,31 @@
 
   }
 .badge{
-  margin-left: 2%;
+  margin: 5%;
   margin-top:1em;
   position: absolute;
   z-index:50;
 
   border:solid 1px green;
 
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.886);
 
 }
+.badge2{
+  margin: 15px;
+  margin-top:1em;
+  position: absolute;
+  z-index:55;
+
+  border:solid 1px green;
+
+  background-color: rgba(0, 0, 0, 0.886);
+  border-radius: 1em;
+  padding:5px;
+  
+
+}
+
 .badge:hover{
     animation-name: opener;
     animation-duration: 3s;
@@ -64,7 +80,7 @@
 
 }
 @media only screen and (max-width: 850px){
-  .badge{
+  .badge, .badge2{
     margin-left: 62%;
     }
 }

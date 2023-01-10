@@ -239,7 +239,16 @@
                     Lorem ipsum dolor sit amet 
                   </p>
                   <h5>Consequuntur provident</h5>
-                  <h5 style="color:red; text-shadow:1px 0px 5px hotpink">delectus omnis</h5>
+  <div class="container d-flex border border-danger p-2 m-2">
+  
+  
+   <h5 style="color:red; text-shadow:1px 0px 5px hotpink">
+                
+                  
+                  <div class="col-6"><img src="../assets/fruit2icon.gif"/></div>
+                  
+                  delectus omnis</h5></div>
+                 
                 </div>
               </div>
             </div></div></div>

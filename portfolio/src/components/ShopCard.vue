@@ -181,6 +181,15 @@
 </script>
 
 <style lang="scss" scoped>
+
+
+
+h1{
+
+    text-shadow: 20px 10px 0px red,
+    20px 20px 0px red,
+    20px 0px 0px red;
+}
 .card{
     width:30%;
 max-height:450px;
