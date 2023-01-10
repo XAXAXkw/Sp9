@@ -36,8 +36,8 @@
 
 /* The element to apply the animation to */
 /* The element to apply the animation to */
-p, h6 {
-  width: 100em;
+p {
+  width: 10em;
   position: relative;
   background-color: rgba(170, 255, 0, 0);
 }

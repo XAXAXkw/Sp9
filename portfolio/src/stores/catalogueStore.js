@@ -7,18 +7,28 @@ import { defineStore } from 'pinia'
 
 
 
-export const useAlertsStore = defineStore('alertStore', {
-  // other options...
-})
+
 
 //------------------------------------------
 
-export const useCounterStore = defineStore('counter', {
+export const useCatalogueStore = defineStore('catalogueStore', {
 
 
   //data
 
-  state: () => ({ count: 0, name: 'Edu', ShowCart:true,catalogue:[{id:1,name:'armand'},{id:2,name:'Pepe'}] }),
+  state: () => ({ 
+    count: 0,
+     name: 'Jan',
+      ShowCart:true,
+      catalogue:
+      [
+        
+        {id:1,name:'armand',price:100,w:60,h:45,tech:'painting',src:'../assets/paint/IMG_7372-1.JPG'},
+        {id:2,name:'fransua',price:1500,w:20,h:55,tech:'drawing',src:'../assets/paint/IMG_7372-1.JPG'},
+        {id:3,name:'morisse',price:7500,w:200,h:145,tech:'psinting',src:'../assets/paint/IMG_7372-1.JPG'}
+      ]
+    
+    }),
 
   //computed
   getters: {
