@@ -29,8 +29,10 @@ return{
 
 #app {
   font-family: "Press Start 2P", cursive;
-margin-bottom: 20em;
+  margin:auto;
+
   color: #9dff00;
+
 
 }
 h6,

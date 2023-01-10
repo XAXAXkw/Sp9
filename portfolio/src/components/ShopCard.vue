@@ -3,11 +3,12 @@
     <div class=" container " >
 <div class="container ">
 
-1
+
 <div class="row ">|<h1>SHOP</h1>| <div class="container ">
       <h6>
      <a href="#" style="color:green">-|BACK|-</a>|<a href="#" style="color:red">-|NEXT|-</a> 
       </h6>
+      <img  class="xlogo" src="../assets/xaxaxlogo16.png"/>
       </div>
 
 
@@ -185,7 +186,7 @@
 
 
 h1{
-
+ font-size:80px;
     text-shadow: 20px 10px 0px red,
     20px 20px 0px red,
     20px 0px 0px red;
@@ -234,5 +235,10 @@ opacity: 0.2;
 min-height:100%;
 min-width:100%;
 margin:0px;
+}
+
+
+.xlogo{
+    height:3em;
 }
 </style>

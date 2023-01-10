@@ -295,11 +295,11 @@ export default{
 <style lang="scss" scoped>
 .Pic {
 
-  height: 400px;
-  width:100%;
+  height: 3em;
+  width:4em;
 
 }
-  h1,h3{
+  h3{
   text-shadow: 1px 1px 20px aquamarine;
   font-size: 5vmin;
   padding: 0.1em;

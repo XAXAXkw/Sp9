@@ -22,8 +22,8 @@ c
 <p>TOTAL:000$</p>
 <div class="container m-1">
 
-<button>CHECK OUT</button>
-<button>CLEAR CART</button>
+<button class="btn1">CHECK OUT</button>
+<button class="btn2">CLEAR CART</button>
 </div>
 
 </div>
@@ -50,14 +50,33 @@ c
     margin-top:5px;
     margin-left:65%;
     z-index:20;
+    max-width: 250px;
+
+    .btn1{
+width:100px;
+background-color: rgb(166, 255, 0);
+color:green;    padding:5px;
+border:solid 2px ;
+border-radius: 15px; margin:2px;
+
+    }
+    .btn2{
+width:100px;
+background-color: rgb(157, 237, 175);
+color:green;    padding:5px;
+border:solid 2px ;
+border-radius: 15px; 
+
+    }
 
 }
 .bkger{
-    background-color:rgba(32, 15, 24, 0.898);
+    background-color:rgba(25, 32, 15, 0.898);
     position:absolute;
     min-width:100%;
     min-height: 100%;
     z-index:15;
+   
 
 }
 </style>

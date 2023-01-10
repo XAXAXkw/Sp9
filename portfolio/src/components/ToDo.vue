@@ -2,9 +2,9 @@
   <div class="container template ">  <p style="color:rgb(42, 74, 63)">EXISTENCIAL DOUBTS? - CLIMATIC ANGUISH? - SYSTEMIC DEPRESSION?</p>
   <div class="row">
     <div class="Pic col-8"><h1>FAQS</h1></div>
-     <div class="col-12  ">         <div class="d-blockbg bg-warning  border border-danger">        <input class="inputDark" placeholder="Why are we here?..."/>
+     <div class="col-12  ">         <div class="d-block mb-4   border border-danger">        <input class="inputDark" placeholder="Why are we here?..."/>
         <button @click="addTodo" class="btn btn-sm text-success m-1 text-danger">ASK ME ANYTHING</button></div>
-     <div class="col-10  border border-success w-100 p-2"><h4>...WHATEVER YOU NEED. I'm not joking.</h4> This is SERIOUS.</div>   <h3>GET<br /> ANSWERS<br /> NOW!</h3>
+     <div class="col-10  border border-success w-100 p-2 mb-4"><h4>...WHATEVER YOU NEED. To propose and SERVE HUMANS.</h4> SURREAL ARTIFICIAL INTELLIGENCE</div>   <h3>GET<br /> ANSWERS<br /> NOW!</h3>
      
 <div class="thingreen w-75 w-lg-50 m-auto"><h3>result:</h3>
 <div class="row "><hr />

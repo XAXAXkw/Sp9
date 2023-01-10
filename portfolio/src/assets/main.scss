@@ -1,6 +1,4 @@
-**{
-  max-width: 800px;
-}
+
 
 .template{
   margin: 0;
@@ -11,17 +9,17 @@
  
   background: rgba(51, 51, 51, 0.305);
   background-image: linear-gradient(rgba(0, 255, 0, 0.041) .1em, transparent .1em), linear-gradient(90deg, rgba(0, 255, 0, 0.068) .1em, transparent .1em);
-  background-size: 3em 3em;
-    animation-name: example;
-    animation-duration: 2s;
+  background-size: 1em 3em;
+   // animation-name: example;
+    //animation-duration: 2s;
 
     
     
     min-height: 100% !important;
-    max-width: 1024px;
+    min-width: 100% !important;
 
    
-   
+   text-align: center;
 
   }
 .thingreen{
@@ -45,8 +43,8 @@
 
     position: relative;
     background-color: rgba(170, 255, 0, 0);
-    animation-name: example2;
-    animation-duration: 1s;
+    //animation-name: example2;
+    //animation-duration: 1s;
   }
   @keyframes example2 {
     0%   {background-color:rgba(170, 255, 0, 0); left:0px; top:200px;}

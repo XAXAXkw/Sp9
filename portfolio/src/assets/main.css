@@ -1,20 +1,13 @@
-** {
-  max-width: 800px;
-}
-
 .template {
   margin: 0;
   padding: 0;
   background: rgba(51, 51, 51, 0.305);
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.1em, rgba(0, 255, 0, 0.041)), color-stop(0.1em, transparent)), -webkit-gradient(linear, left top, right top, color-stop(0.1em, rgba(0, 255, 0, 0.068)), color-stop(0.1em, transparent));
   background-image: linear-gradient(rgba(0, 255, 0, 0.041) 0.1em, transparent 0.1em), linear-gradient(90deg, rgba(0, 255, 0, 0.068) 0.1em, transparent 0.1em);
-  background-size: 3em 3em;
-  -webkit-animation-name: example;
-          animation-name: example;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  background-size: 1em 3em;
   min-height: 100% !important;
-  max-width: 1024px;
+  min-width: 100% !important;
+  text-align: center;
 }
 
 .thingreen {
@@ -47,10 +40,6 @@ p, h6 {
   width: 100em;
   position: relative;
   background-color: rgba(170, 255, 0, 0);
-  -webkit-animation-name: example2;
-          animation-name: example2;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
 }
 
 @-webkit-keyframes example2 {
