@@ -3,15 +3,14 @@
 
   <LogBadge />
 
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <div class="container d-block">
+    <nav class="navbar d-flex border navbar-expand-lg">
+      <div class="container-fluid d-flex border justify-content-evenly">
+        <div class="col-2 d-flex border">
 
 
 
           <div></div>
 
-          <div class="container p-4"></div>
         </div>
 
         <button
@@ -25,7 +24,11 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+
+
+        <div class="collapse navbar-collapse border " id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-4 mb-lg-0">
 
            
@@ -34,19 +37,35 @@
                 <router-link to="/shop">SHOP</router-link></a
               >
             
-              <a class="nav-link active" aria-current="page" href="#">
-                <router-link to="/shopcard">CART</router-link></a
-              >
+          
             
-              <a class="nav-link active" aria-current="page" href="#">
-                <router-link to="/todo">FAQS</router-link></a
-              >
+           
             </li>
+
+            <li class="nav-item">
+
+   <a class="nav-link active" aria-current="page" href="#">
+                <router-link to="/todo">FAQS</router-link></a
+              ></li>
+
+
+
+
+              <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">
+                <router-link to="/shopcard">CART</router-link></a
+              ></li>
+
+
+
             <li class="nav-item">
               <a class="nav-link" href="#">
                 <router-link to="/about"> BIO</router-link>
               </a>
             </li>
+
+
+
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -74,20 +93,30 @@
             </li>
 
 
-            <li class="nav-item">
-            
-            <a class="nav-link active" aria-current="page" href="#">
+   
+
+          </ul>
+
+
+<div class="container d-flexbox justify-content-right">
+
+<div class="row">
+
+<div class="col">    <a class="nav-link active" aria-current="page" href="#">
               <router-link to="/"><button  class="btn btn-sm btn-success">
               
                 
                 
                 
                 FOR HIRE</button></router-link></a
-            >
-          </li>
+            ></div>
 
-          </ul>
-          <form class="d-flex" role="search">
+
+
+
+<div class="col">
+
+<form class="d-flex" role="search">
             <input
               style="width: 200px;background-color: black;border:solid 1px yellowgreen; color:yellowgreen"
               class="form-control me-2"
@@ -98,6 +127,10 @@
             <button class="btn btn-outline-light" type="submit">FIND</button>
             <a href="#"><img style="height:50px" src="@/assets/xaxaxlogo16-172x122.png" /></a> 
           </form>
+</div>
+</div>
+</div>          
+          
         </div>
       </div>
     </nav>

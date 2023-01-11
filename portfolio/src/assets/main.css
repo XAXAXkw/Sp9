@@ -1,3 +1,16 @@
+.jungle {
+  background-image: url("../assets/bkg_weed_float.png");
+  opacity: 0.5;
+  position: absolute;
+  z-index: 90;
+  /*background-color: #9d146239;*/
+  min-width: 100vw;
+  min-height: 200vw;
+  background-size: 1200px;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
 .template {
   margin: 0;
   padding: 0;
@@ -5,6 +18,10 @@
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.1em, rgba(0, 255, 0, 0.041)), color-stop(0.1em, transparent)), -webkit-gradient(linear, left top, right top, color-stop(0.1em, rgba(0, 255, 0, 0.068)), color-stop(0.1em, transparent));
   background-image: linear-gradient(rgba(0, 255, 0, 0.041) 0.1em, transparent 0.1em), linear-gradient(90deg, rgba(0, 255, 0, 0.068) 0.1em, transparent 0.1em);
   background-size: 1em 3em;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   min-height: 100% !important;
   min-width: 100% !important;
   text-align: center;
@@ -45,6 +62,10 @@ p {
   width: 10em;
   position: relative;
   background-color: rgba(170, 255, 0, 0);
+  -webkit-animation-name: example2;
+          animation-name: example2;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 @-webkit-keyframes example2 {
@@ -100,6 +121,13 @@ p {
     background-color: #280721;
     left: 0px;
     top: 0px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .jungle {
+    background-color: rgba(200, 255, 0, 0.101);
+    background-size: 600px;
   }
 }
 /*# sourceMappingURL=main.css.map */

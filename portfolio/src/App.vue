@@ -37,11 +37,7 @@ return{
 
 }
 
-.jungle{
-  background-image: url('./assets/bkg_weed_float.png');
-  position: absolute;
-  background-color: #9dff00;
-}
+
 h6,
 p {
   font-family: "Press Start 2P", cursive;
