@@ -1,9 +1,9 @@
 <template>
     <div>
 
-    <div class="badge2">Login</div>
+    <div class="badge2" @click="showLogin=!showLogin">Login</div>
 
-        <div class="badge">  
+        <div class="badge" v-if="showLogin">  
               
         <div class="inputBadge w-50 d-flexbox justify-content-evenly">
         
@@ -19,7 +19,7 @@
 
 <script>
     export default {
-        name:'LogBadge'
+        name:'LogBadge',data(){return{showLogin:false}}
     }
 </script>
 
@@ -81,7 +81,7 @@
 }
 @media only screen and (max-width: 850px){
   .badge, .badge2{
-    margin-left: 62%;
+    margin-left: 2%;
     }
 }
 

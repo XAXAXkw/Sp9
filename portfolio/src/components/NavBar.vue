@@ -3,9 +3,9 @@
 
   <LogBadge />
 
-    <nav class="navbar d-flex border navbar-expand-lg">
-      <div class="container-fluid d-flex border justify-content-evenly">
-        <div class="col-2 d-flex border">
+    <nav class="navbar d-flex  navbar-expand-lg">
+      <div class="container-fluid d-flex  justify-content-evenly">
+        <div class="col-2 d-flex ">
 
 
 
@@ -14,7 +14,7 @@
         </div>
 
         <button
-          class="navbar-toggler"
+          class="navbar-toggler p-4"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -28,8 +28,8 @@
 
 
 
-        <div class="collapse navbar-collapse border " id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-4 mb-lg-0">
+        <div class="collapse navbar-collapse m-4 " id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-4 mb-lg-0 p-4">
 
            
             <li class="nav-item">
@@ -103,7 +103,7 @@
 <div class="row">
 
 <div class="col">    <a class="nav-link active" aria-current="page" href="#">
-              <router-link to="/"><button  class="btn btn-sm btn-success">
+              <router-link to="/"><button  class="btn btn-sm btn-success m-4">
               
                 
                 
@@ -135,7 +135,7 @@
       </div>
     </nav>
     <div class="d-flex justify-content-evenly">
-<p class="B6" >Virtual ART - SWAMP | Barcelona MMXXIII </p>    <div class="container"> ivancuadros.com<img style="height: 25px" src="@/assets/cursor.gif" /> </div>
+<p class="B6 p-2" > ART | Barcelona MMXXIII </p>    <div class="container"> ivancuadros.com<img style="height: 25px" src="@/assets/cursor.gif" /> </div>
 
   
 
@@ -147,12 +147,12 @@
 
 <script>
 import FooterComp from '@/components/FooterComp.vue'
-//import LogBadge from '@/components/LogBadge.vue'
+import LogBadge from '@/components/LogBadge.vue'
 export default {
   name: "NavBar",
 components:{
   FooterComp,
-  //LogBadge
+  LogBadge
 }
 };
 </script>
@@ -177,7 +177,7 @@ a {
   color: rgb(147, 228, 153);
 }
 a:hover {
-  color: rgb(34, 166, 91);
+  color: rgb(63, 32, 54);
 
 }
 

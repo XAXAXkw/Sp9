@@ -17,6 +17,7 @@ export const useCatalogueStore = defineStore('catalogueStore', {
   //data
 
   state: () => ({ 
+    visorSatus:true,
     count: 0,
      name: 'Jan',
       ShowCart:true,

@@ -1,8 +1,8 @@
 <template >
     <div class="template p-4">
+<VisorComp />
 
-
-
+<img src="../assets/icon_folks.svg"/>
 <ul>
 
 <li
@@ -89,7 +89,7 @@ v-for="item in store.catalogue" :key="item.id"
 </template>
 
 <script>
-
+import VisorComp from "@/components/VisorComp.vue";
 
 import { useCatalogueStore } from '@/stores/catalogueStore.js'
 
@@ -102,6 +102,9 @@ const store = useCatalogueStore();
 
     export default {
         name:'ExpoSite',
+        components:{
+VisorComp
+        },
         computed:{
          
         },

@@ -31,7 +31,7 @@ return{
 #app {
   font-family: "Press Start 2P", cursive;
   margin:auto;
-
+max-width: 800px;
   color: #9dff00;
 
 
