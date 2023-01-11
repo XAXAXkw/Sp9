@@ -7,12 +7,15 @@
 
 <li
 v-for="item in store.catalogue"
-:key="item"
+:key="item.id"
+
 >
 
 
-ITEM {{ item }}
+<a href="#">
 
+ITEM {{ item.id }} - {{ item.name }} - {{ item.tech }} - {{ item.price }}$
+</a>
 </li>
 </ul>
 
@@ -148,5 +151,13 @@ li{    display: block;
     margin: 1vmax;
     margin-left:5%;
      box-shadow: 1px 1px 50px rgba(153, 205, 50, 0.393);
+}
+li:hover{
+    box-shadow: 1px 1px 50px rgba(153, 205, 50, 0.578);
+    background-color: rgba(42, 26, 45, 0.321);
+}
+a{
+    color:greenyellow;
+    text-decoration: none;
 }
 </style>

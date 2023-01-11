@@ -18,7 +18,7 @@ export const useCounterStore = defineStore('counter', {
 
   //data
 
-  state: () => ({ count: 0, name: 'Eduardo', ShowCart:true,list:[] }),
+  state: () => ({ count: 0, name: 'Eduardo', ShowCart:true,list:[],pixor:'.png' }),
 
   //computed
   getters: {

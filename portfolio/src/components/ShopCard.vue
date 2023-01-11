@@ -8,7 +8,7 @@
       <h6>
      <a href="#" style="color:green">-|BACK|-</a>|<a href="#" style="color:red">-|NEXT|-</a> 
       </h6>
-      <img  class="xlogo" src="../assets/xaxaxlogo16.png"/>
+      <img  class="xlogo" src="../assets/xaxaxlogo16.png"/>{{ store.catalogue.length }}
       </div>
 
 
@@ -16,22 +16,22 @@
 
     
     <div class="card thingreen">
-        <div class="container text-light bg-success d-block border border-success m-auto">
+        <div class="container rounded text-light bg-success d-block border border-success m-auto">
         <div class="row">
       
            <div class="col">
-              ITEM# 327
+              ITEM# {{ store.catalogue[0].id}}
            </div>
 
            <div class="col">
-           <h6 style="color:orange">PRICE:100$</h6>
+           <h6 style="color:orange">PRICE:{{store.catalogue[0].price}}$</h6>
            </div>
         </div>
         </div>
 
     <hr />
     
-    <p>Title IITEM</p>
+    <p>Title:<br />{{ store.catalogue[0].name }}</p>
     <h4>INFO CARD</h4>
     <div class="pixter"></div>
     
@@ -41,7 +41,7 @@
     
     
     <hr />
-    <button onclick="alert(id)" id="1">BUY</button>
+    <button class="rounded" onclick="alert(id)" id="1">BUY</button>
     </div>
 
 
@@ -175,8 +175,18 @@
 </template>
 
 <script>
+import { useCatalogueStore } from '@/stores/catalogueStore.js'
+
+
+const store = useCatalogueStore();
+
     export default {
         name:'ShopCard',
+        data(){
+            return{
+                store
+            }
+        }
 
     }
 </script>
@@ -221,7 +231,7 @@ max-height:450px;
 height:30vmax;
 width:20vmax;
 background-color: green;
-background-image: url('../assets/paint/IMG_7372-1.JPG');
+
 margin:auto;
 padding:0em;
 }

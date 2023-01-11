@@ -24,8 +24,8 @@ export const useCatalogueStore = defineStore('catalogueStore', {
       catalogue:
       [
         
-        {id:1,name:'armand',price:100,w:60,h:45,tech:'painting',src:'../assets/paint/IMG_7372-1.JPG'},
-        {id:2,name:'fransua',price:1500,w:20,h:55,tech:'drawing',src:'../assets/paint/IMG_7372-1.JPG'},
+        {id:1,name:'armand',price:1750,w:60,h:45,tech:'painting',src:require("@/assets/paint/isolated.png")},
+        {id:2,name:'fransua',price:1500,w:20,h:55,tech:'drawing',src:require("@/assets/paint/landscape327.png")},
         {id:3,name:'morisse',price:7500,w:200,h:145,tech:'psinting',src:'../assets/paint/IMG_7372-1.JPG'}
       ]
     
