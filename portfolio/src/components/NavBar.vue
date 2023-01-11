@@ -34,7 +34,7 @@
            
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">
-                <router-link to="/shop">SHOP</router-link></a
+                <router-link to="/shopcard">SHOP</router-link></a
               >
             
           
@@ -53,7 +53,7 @@
 
               <li class="nav-item">
     <a class="nav-link active" aria-current="page" href="#">
-                <router-link to="/shopcard">CART</router-link></a
+                <router-link to="/exposite">EXPO</router-link></a
               ></li>
 
 
@@ -74,7 +74,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Catalogue
+                Art Collection
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Computed</a></li>
@@ -97,12 +97,26 @@
 
           </ul>
 
+         <button @click="Vsearcher=!Vsearcher">SEARCH</button>
+          
+        </div>
+      </div>
+    </nav>
+    <div class="d-flex justify-content-evenly border">
 
-<div class="container d-flexbox justify-content-right">
 
-<div class="row">
+<div class="container d-flex justify-content-evenly border searcher"
+v-if="Vsearcher"
+>
 
-<div class="col">    <a class="nav-link active" aria-current="page" href="#">
+<div class="row border">
+
+<div class="col-6 border">   
+
+<div class="container border">
+
+<div class="row border">
+<div class="container border"> <a class="nav-link active" aria-current="page" href="#">
               <router-link to="/"><button  class="btn btn-sm btn-success m-4">
               
                 
@@ -110,31 +124,41 @@
                 
                 FOR HIRE</button></router-link></a
             ></div>
+<div class="col-6 border">      <a href="#"><img style="height:50px" src="@/assets/xaxaxlogo16-172x122.png" /></a> </div>
+
+</div></div>
+
+            
+      
+            
+            </div>
 
 
 
 
-<div class="col">
+<div class="col border">
 
-<form class="d-flex" role="search">
+<form class="d-flex row m-2 p-1" role="search">
             <input
-              style="width: 200px;background-color: black;border:solid 1px yellowgreen; color:yellowgreen"
+              style="width: 100%;background-color: black;border:solid 1px yellowgreen; color:yellowgreen"
               class="form-control me-2"
               type="search"
               placeholder="..."
               aria-label="search"
             />
+
+            <br />
+            <hr />
             <button class="btn btn-outline-light" type="submit">FIND</button>
-            <a href="#"><img style="height:50px" src="@/assets/xaxaxlogo16-172x122.png" /></a> 
+           
           </form>
 </div>
 </div>
-</div>          
-          
-        </div>
-      </div>
-    </nav>
-    <div class="d-flex justify-content-evenly">
+</div> 
+
+
+
+
 <p class="B6 p-2" > ART | Barcelona MMXXIII </p>    <div class="container"> ivancuadros.com<img style="height: 25px" src="@/assets/cursor.gif" /> </div>
 
   
@@ -150,6 +174,11 @@ import FooterComp from '@/components/FooterComp.vue'
 import LogBadge from '@/components/LogBadge.vue'
 export default {
   name: "NavBar",
+  data(){
+    return{
+      Vsearcher:false
+    }
+  },
 components:{
   FooterComp,
   LogBadge
@@ -158,6 +187,9 @@ components:{
 </script>
 
 <style lang="css" scoped>
+.searcher{
+  background-color: rgba(153, 205, 50, 0.369);
+}
 a {
   font-size: 11px;
   letter-spacing: normal;

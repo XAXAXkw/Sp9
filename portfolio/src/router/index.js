@@ -29,6 +29,11 @@ const routes = [
     component: () => import('@/components/CatalogueFull.vue')
   },
   {
+    path: '/exposite',
+    name: 'exposite',
+    component: () => import('@/components/ExpoSite.vue')
+  },
+  {
     path: '/card',
     name: 'card',
     component: () => import('@/components/CardComp.vue')
