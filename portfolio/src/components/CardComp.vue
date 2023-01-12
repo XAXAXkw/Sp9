@@ -63,6 +63,21 @@
         PIC: 327 {{ store2.count }}
         <hr />
         <img :src="fillPic(this.store2.count)" />
+        <br />
+        <hr />
+        <div >Similar Artwork:<hr />
+        
+        <img class="mosaiker" :src="store.catalogue[this.store2.count].src"/>
+
+
+        
+        
+        
+        </div>
+
+
+
+        <hr />
 
  
 
@@ -132,6 +147,7 @@ border:25px solid black;
 
   color: rgb(6, 41, 38);
   background: rgb(19, 65, 29);
+
   background: linear-gradient(
     153deg,
     rgba(19, 65, 29, 1) 8%,
@@ -150,6 +166,21 @@ border:25px solid black;
 
 
 }
+
+.mosaiker{
+  display: block;
+max-width:15%;
+min-height:15%;
+background-color: red;
+margin:auto;
+background-position: 35em;
+
+
+
+
+}
+
+
 h6{
   font-size: 0.8vmax;
   white-space: nowrap;

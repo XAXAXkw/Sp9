@@ -5,7 +5,7 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: () => import('@/components/ExpoSite.vue')
+    component: () => import('@/components/MasterZone.vue')
   },
   {
     path: '/about',

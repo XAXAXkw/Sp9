@@ -1,17 +1,24 @@
 <template>
     <div>
 
-    <div class="badge2" @click="showLogin=!showLogin">Login</div>
+    <div class="badge" @click="showLogin=!showLogin">Login</div>
 
-        <div class="badge" v-if="showLogin">  
+        <div class="badge2 d-flexbox row m-3" v-if="showLogin">  
               
-        <div class="inputBadge w-50 d-flexbox justify-content-evenly">
-        
-        USER <br /><input class="input1"/>
+        <div class="w-50 d-flexbox justify-content-center p-2 m-2"><hr />
+        <p>
+        USER <br /><input class="input1" id="user"/>
         <br />
-        <hr />
-        PSSWD<br /><input type="password" class="input1"/>
-        </div><button class="btn btn-sm btn-success" >ENTER</button>
+        
+        PSSWD<br /><input type="password" class="input1" id="password"/></p>
+        <div class="row w-100 m-auto">
+        
+         <button class="btn btn-sm btn-success m-auto" 
+        @click="verify()"
+        >ENTER</button>
+
+        </div>
+       </div>
 </div>
 
     </div>
@@ -21,8 +28,32 @@
 
 
     export default {
-        name:'LogBadge',data(){return{showLogin:false}}
-    }
+        name:'LogBadge',
+        data(){return{
+          showLogin:false,
+          password:'0000', user:'ivancuadros@gmail.com'
+        
+        }},
+        methods:{
+          verify(){
+            let newUser = document.getElementById('user').value;
+            let newPassword = document.getElementById('password').value;
+            // alert(newUser);
+            if (newUser == this.user && newPassword == this.password){
+              alert('Welcome, you are logged in');
+              this.showLogin=false;
+
+            } else{
+              alert('Wrong user or password');
+              this.showLogin=false;
+            }
+          }
+        }
+
+   
+      
+      }
+    
 </script>
 
 <style lang="scss" scoped>
@@ -34,7 +65,12 @@
 }
 
 .input1{
-    max-width:70px;
+    max-width:150px;
+    background-color: rgb(27, 13, 30);
+    margin:2em;
+    color:rgb(255, 0, 93);
+    font-size: 12px;
+    border:dashed 1px green;
 
 }
 .inputBadge:hover{
@@ -50,7 +86,7 @@
 
   }
 .badge{
-  margin: 5%;
+  margin: 1em;
   margin-top:1em;
   position: absolute;
   z-index:50;
@@ -61,10 +97,10 @@
 
 }
 .badge2{
-  margin: 15px;
+
   margin-top:1em;
   position: absolute;
-  z-index:55;
+  z-index:5;
 
   border:solid 1px green;
 
@@ -77,7 +113,7 @@
 
 .badge:hover{
     animation-name: opener;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
 
 }
@@ -98,8 +134,9 @@
     100% {background-color:rgb(40, 7, 33); left:0px; top:0px;}
   }
   @keyframes opener {
-    0%   {height:50px; top:0px;}
-100%  { height:200px; top:0px;}
+    0%   {height:25px; width:5em;}
+    50%   {height:25px; width:200px;}
+100%  { height:23px; width:200px;}
 
 
   }

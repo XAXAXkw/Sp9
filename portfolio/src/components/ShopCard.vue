@@ -1,8 +1,14 @@
 <template>
     <div>
+
     <div class=" container" >
 <div class="container "
 >
+
+
+
+
+
 <h5 >
 <button @click="modalOn=!modalOn">X</button>
 cart demo</h5>
@@ -32,7 +38,7 @@ id:{{ item.id }} added | price:<span class="redneon">{{ item.price }}$</span>
 </li>
 </ul>
 <hr />
-<span class="redneon">TOTAL: {{ this.total }}$</span>
+<span class="redneon" style="font-size:25px">TOTAL: {{ this.total }}$</span>
 <br />
 
 <div class="row w-25" style="font-size: x-small;">
@@ -192,6 +198,8 @@ this.total = this.total + item.price
 },
 clearCart(){
     store.cartList = [];
+    this.total = 0;
+
 }
 
 },
@@ -220,6 +228,8 @@ max-height:450px;
 
  
 }
+
+
 .cartModal{
     background-color: rgba(36, 7, 29, 0.755);
     padding:1.5em;
