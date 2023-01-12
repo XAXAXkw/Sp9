@@ -117,7 +117,7 @@ v-if="Vsearcher"
 
 <div class="row ">
 <div class="container "> <a class="nav-link active" aria-current="page" href="#">
-              <router-link to="/"><button  class="btn btn-sm btn-success m-4">
+              <router-link to="/"><button  class="buttonT">
               
                 
                 
@@ -187,6 +187,8 @@ components:{
 </script>
 
 <style lang="css" scoped>
+
+
 .searcher{
   background-color: rgba(153, 205, 50, 0.369);
 }
@@ -194,6 +196,9 @@ a {
   font-size: 11px;
   letter-spacing: normal;
 }
+
+
+
 .menu{
 
   /*background: rgb(19, 65, 29);*/

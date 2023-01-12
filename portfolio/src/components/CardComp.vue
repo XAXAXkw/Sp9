@@ -22,7 +22,7 @@
       Title: '{{ store.catalogue[store2.count].name }}'</div>
   
 
-  <div class="col-md-7 ">        <img class="jump" :src="fillPic(this.store2.count)" /></div>
+  <div class="col-md-7 ">      <div class="waterpic">   <img  class="xlogo" src="../assets/xaxaxlogo16.png"/></div>   <img class="jump" :src="fillPic(this.store2.count)" /></div>
        </div>
      
       <hr />
@@ -56,7 +56,7 @@
      
       >
 
- 
+<div class="waterpic">   <img  class="xlogo" src="../assets/xaxaxlogo16.png"/></div> 
         PIC: 327 {{ store2.count }}
         <hr />
         <img :src="fillPic(this.store2.count)" />
@@ -125,6 +125,7 @@ max-height:250px;
 border:25px solid black;
 }
 .pic {
+
   color: rgb(6, 41, 38);
   background: rgb(19, 65, 29);
   background: linear-gradient(
@@ -139,6 +140,12 @@ border:25px solid black;
   margin: auto;
 
 }
+.waterpic{
+
+  position: absolute;
+  z-index:100;
+
+}
 h6{
   font-size: 0.8vmax;
   white-space: nowrap;
@@ -148,5 +155,10 @@ h6{
 }
 h1{
   text-align: left;
+}
+.xlogo{
+height:25px;
+
+
 }
 </style>

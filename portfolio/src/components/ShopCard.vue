@@ -229,11 +229,14 @@ max-height:450px;
         z-index:1;
 
     }
-}
+    .pixter{
+
+      min-height:1000px;
+    }}
 
 .pixter{
-height:30vmax;
-width:20vmax;
+height:30px;
+width:200px;
 background-color: green;
 
 margin:auto;
@@ -254,6 +257,7 @@ margin:0px;
 
 
 .xlogo{
-    height:3em;
+margin:10px;
+height:25px;
 }
 </style>
