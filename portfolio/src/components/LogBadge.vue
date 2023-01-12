@@ -18,6 +18,8 @@
 </template>
 
 <script>
+
+
     export default {
         name:'LogBadge',data(){return{showLogin:false}}
     }

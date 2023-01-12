@@ -1,13 +1,30 @@
 <template>
     <div>
     <div class=" container" >
-<div class="container ">
+<div class="container "
+>
+<h5 >
+<button @click="modalOn=!modalOn">X</button>
+cart demo</h5>
+<div class="cartModal"
+v-if="modalOn"
 
-<div class="cartModal">
+>
 
 <ul>
-cart demo
-<li
+<div class="container p-2"
+
+>
+
+
+</div>
+
+<div class="row">
+
+</div>
+
+<li 
+style="background-color:  rgb(47, 18, 50);padding:5px;border-radius:2em;margin-bottom:5px" 
 v-for="item in store.cartList"
 :key="item"
 >
@@ -15,7 +32,20 @@ id:{{ item.id }} added | price:<span class="redneon">{{ item.price }}$</span>
 </li>
 </ul>
 <hr />
-<span class="redneon">TOTAL: {{ this.total }}$</span></div>
+<span class="redneon">TOTAL: {{ this.total }}$</span>
+<br />
+
+<div class="row w-25" style="font-size: x-small;">
+
+
+
+
+
+<button class="btn btn-success btn-sm m-1">Check Out</button>
+<button @click="clearCart()" class="btn btn-danger btn-sm m-1">Clear Cart</button>
+</div>
+
+</div>
 
 
 <div class="row ">|<h1>SHOP</h1>| 
@@ -25,7 +55,7 @@ id:{{ item.id }} added | price:<span class="redneon">{{ item.price }}$</span>
 
     
     <div 
-    class="card thingreen d-flexbox"
+    class="card thingreen d-flexbox p-2"
     v-for="item in store.catalogue " :key="item"
     >
         <div class="container rounded text-light bg-success d-block border border-success m-auto">
@@ -143,7 +173,8 @@ const store2 = useCounterStore();
         data(){
             return{
                 store,store2,
-                total:0
+                total:0,
+                modalOn:true
             }
         },
         computed:{
@@ -158,6 +189,9 @@ fillPic(p){
 addToCart(item){
 store.cartList.push(item);
 this.total = this.total + item.price
+},
+clearCart(){
+    store.cartList = [];
 }
 
 },
@@ -187,7 +221,7 @@ max-height:450px;
  
 }
 .cartModal{
-    background-color: rgba(255, 0, 191, 0.398);
+    background-color: rgba(36, 7, 29, 0.755);
     padding:1.5em;
     position: fixed;
     z-index: 100;
@@ -212,21 +246,28 @@ max-height:450px;
         margin:auto;
         margin-top: 2em;
         z-index:1;
+        flex-wrap:no-wrap;
+        padding:2em;
 
     }
   }
   .pixterpic{
 
-      height:100px;
+      height:12em;
       margin:auto;
+      padding:auto;
+      flex-wrap: wrap;
+      max-width: 100%;
     }
 .pixter{ 
     flex-wrap: wrap;
 
 background-color: rgb(0, 0, 0);
+border-radius: 2em;
+flex-wrap: no-wrap;
 
-margin:auto;
-padding:1em;
+width: 100%;
+
 }
 
 .templated{

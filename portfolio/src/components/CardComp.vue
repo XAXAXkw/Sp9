@@ -79,8 +79,6 @@ import { useCounterStore } from '@/stores/alertStore.js'
 const store2 = useCounterStore();
 
 import { useCatalogueStore } from '@/stores/catalogueStore.js'
-
-
 const store = useCatalogueStore();
 
 
@@ -122,6 +120,9 @@ max-height:250px;
 
 
 }
+.template{
+  z-index:5;
+}
 
 .jump{
   box-shadow: 1px 1px 60px rgba(127, 255, 212, 0.582);
@@ -145,8 +146,8 @@ border:25px solid black;
 }
 .waterpic{
 
-  position: absolute;
   z-index:100;
+
 
 }
 h6{
@@ -160,7 +161,7 @@ h1{
   text-align: left;
 }
 .xlogo{
-height:25px;
+height:50px;
 
 
 }

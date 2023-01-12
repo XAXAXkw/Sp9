@@ -17,6 +17,7 @@ export const useCatalogueStore = defineStore('catalogueStore', {
   //data
 
   state: () => ({ 
+    date:new Date(),
     visorSatus:true,
     count: 0,
      name: 'Jan',
@@ -26,9 +27,10 @@ export const useCatalogueStore = defineStore('catalogueStore', {
         {id:0,name:'Jukebox',price:7500,w:200,h:145,tech:'painting',src:require("@/assets/paint/organs.jpg")},
         {id:1,name:'Isolation',price:1750,w:60,h:45,tech:'oil painting',src:require("@/assets/paint/isolated.png")},
         {id:2,name:'Calcification II',price:1500,w:20,h:55,tech:'drawing',src:require("@/assets/paint/landscape327.png")},
-        {id:3,name:'a',price:7500,w:200,h:145,tech:'painting',src:require("@/assets/paint/organs.jpg")},
-        {id:4,name:'b',price:1750,w:60,h:45,tech:'oil painting',src:require("@/assets/paint/isolated.png")},
-        {id:5,name:'c',price:1500,w:20,h:55,tech:'drawing',src:require("@/assets/paint/landscape327.png")},
+        {id:3,name:'a',price:7500,w:200,h:145,tech:'painting',src:require("@/assets/paint/pintura_acab.png")},
+        {id:4,name:'b',price:1750,w:60,h:45,tech:'oil painting',src:require("@/assets/paint/pintura_bomba.png")},
+        {id:5,name:'c',price:1500,w:20,h:55,tech:'drawing',src:require("@/assets/paint/pintura_kingpin.png")},
+        {id:6,name:'d',price:1500,w:20,h:55,tech:'drawing',src:require("@/assets/paint/pintura_pagadi.png")},
       
       ],
       cartList:[]

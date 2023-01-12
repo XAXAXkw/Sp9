@@ -97,7 +97,7 @@
 
           </ul>
 
-         <button @click="Vsearcher=!Vsearcher">SEARCH</button>
+         <button  @click="Vsearcher=!Vsearcher">SEARCH</button>
           
         </div>
       </div>
@@ -159,7 +159,7 @@ v-if="Vsearcher"
 
 
 
-<p class="B6 p-2" > <a >cat</a>|<a href="#">eng</a>|<a>esp</a>|<a>fr </a></p>    <div class="container"> ivancuadros.com<img style="height: 25px" src="@/assets/cursor.gif" /> </div>
+<p class="B6 micrus p-2" > <a >cat</a>|<a href="#">eng</a>|<a>esp</a>|<a>fr </a></p>    <div class="container"> ivancuadros.com<img style="height: 25px" src="@/assets/cursor.gif" /> </div>
 
   
 
@@ -172,12 +172,19 @@ v-if="Vsearcher"
 <script>
 import FooterComp from '@/components/FooterComp.vue'
 import LogBadge from '@/components/LogBadge.vue'
+
+
 export default {
   name: "NavBar",
   data(){
     return{
-      Vsearcher:false
+      Vsearcher:false,
+
     }
+  },
+  computed:{
+
+
   },
 components:{
   FooterComp,

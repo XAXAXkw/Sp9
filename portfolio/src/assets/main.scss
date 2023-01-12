@@ -1,7 +1,4 @@
-body{
-  max-width: 1024px;
 
-}
 
 .weeds{
   background-image: url('../assets/bkg_weed_float.png');
@@ -12,19 +9,31 @@ body{
 .jungle{
  // background-image: url('../assets/bkg_weed_float.png');
  background-image: url('../assets/tigerbkg.svg');
-  opacity: 0.2;
+  opacity: 0.3;
   position: absolute;
   z-index:1;
   /*background-color: #9d146239;*/
-min-width:100%;
-min-height: 100rem;;
+
+min-height: 100rem;
+min-width: 100%;
 background-size: cover;
   pointer-events: none;
 }
 .template{
   margin: 0;
   padding: 0;
-  
+  background: rgba(51, 51, 51, 0.305);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.1em, rgba(0, 255, 0, 0.041)), color-stop(0.1em, transparent)), -webkit-gradient(linear, left top, right top, color-stop(0.1em, rgba(0, 255, 0, 0.068)), color-stop(0.1em, transparent));
+  background-image: linear-gradient(rgba(0, 255, 0, 0.041) 0.1em, transparent 0.1em), linear-gradient(90deg, rgba(0, 255, 0, 0.068) 0.1em, transparent 0.1em);
+  background-size: 1em 3em;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  min-height: 100% !important;
+  min-width: 100% !important;
+  text-align: center;
+}
 
 
 .thingreen{
@@ -36,6 +45,7 @@ background-size: cover;
   color:red;
    text-shadow:1px 0px 5px hotpink
 }
+
 
 
 @keyframes example {
@@ -59,23 +69,23 @@ background-size: cover;
     font-size: 5vmax;
   text-shadow: 1px 1px 50px aqua;
     position: relative;
-    z-index:95;
+
 
     animation-name: example3;
     animation-duration: 2s;
   }
   @keyframes example2 {
-    0%   {background-color:rgba(170, 255, 0, 0); left:3000px; top:0px;}
+    0%   {background-color:rgba(170, 255, 0, 0); left:30px; top:0px;}
     25%  {background-color:rgb(13, 255, 0); left:0px; top:0px;}
-    50%  {background-color:rgba(179, 255, 0, 0.112); left:-100px; top:0px;}
+    50%  {background-color:rgba(179, 255, 0, 0.112); left:100px; top:0px;}
     75%  {background-color:green; left:-100px; top:0px;}
     100% {background-color:rgb(40, 7, 33); left:0px; top:0px;}
   }
   @keyframes example3 {
-    0%   {background-color:rgba(170, 255, 0, 0); top:300px; left:0px;}
+    0%   {background-color:rgba(170, 255, 0, 0); top:30px; left:0px;}
     25%  {background-color:rgb(13, 255, 0); left:0px; top:0px;}
 
-    50%  {background-color:rgba(179, 255, 0, 0); top:-100px; left:0px;}
+    50%  {background-color:rgba(179, 255, 0, 0); top:100px; left:0px;}
     75%  {background-color:rgba(0, 128, 0, 0); left:0px; top:5px;}
     100% {background-color:rgba(40, 7, 33, 0); left:0px; top:0px;}
   }
@@ -90,4 +100,4 @@ background-size: cover;
   background-color: rgba(200, 255, 0, 0.101);
   //background-size: 600px;
   }
-}}
+}

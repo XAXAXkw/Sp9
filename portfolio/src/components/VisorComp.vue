@@ -5,7 +5,7 @@
 
 
 <div 
-v-if="visorStatus2"
+v-if="visorStatus"
 class="wrapped"
 
 >
@@ -13,17 +13,25 @@ class="wrapped"
 
 
 <div class="topper">
+
+<div class="container">
+
+
+</div>
     <div class="container border border-success m-4 p-4 "
 
     >
     
-    <h1>VISOR</h1>
+    <h4>VISOR</h4>
 
 <button
-@click="visorStaus2=false"
+@click="visorStatus=false"
 >CLOSE</button>
-    </div>
 
+    </div>
+<div class="container border">100
+
+</div>
 
 </div>
 
@@ -50,7 +58,8 @@ class="wrapped"
             return{
 
             }
-        }
+        },
+     
     }
 </script>
 
@@ -58,15 +67,17 @@ class="wrapped"
 .wrapped{
     background-color: rgba(9, 19, 15, 0.958);
     min-width: 100%;
-    min-height: 100%;
+    min-height: 1000em !important;
     margin:0;
+    float: inline-start;
     position:absolute;
-    z-index:1;
+    z-index:100;
+    max-width: 100%;
 
 }
 .topper{
     position:absolute;
-    z-index:10;
+    z-index:100;
 }
 
 

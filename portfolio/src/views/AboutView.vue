@@ -3,10 +3,10 @@
 
 
 
-
+<h1>BIO</h1>
     <div class="container about m-4 w-50"><SnapShot />
    <div class="row">
-   <div class="row">      <div class="Pic col-8"><h1>BIO</h1></div></div>
+   <div class="row">      <div class="Pic col-8"></div></div>
    <div class="col-8 d-flexbox">     <div class="container">  
     <img  style="height:10em;margin:0.1em" src="../assets/fruit1icon.gif"/>
     <br />

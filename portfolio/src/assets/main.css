@@ -6,12 +6,12 @@
 
 .jungle {
   background-image: url("../assets/tigerbkg.svg");
-  opacity: 0.2;
+  opacity: 0.3;
   position: absolute;
   z-index: 1;
   /*background-color: #9d146239;*/
-  min-width: 100%;
   min-height: 100rem;
+  min-width: 100%;
   background-size: cover;
   pointer-events: none;
 }
@@ -24,9 +24,9 @@
   background-image: linear-gradient(rgba(0, 255, 0, 0.041) 0.1em, transparent 0.1em), linear-gradient(90deg, rgba(0, 255, 0, 0.068) 0.1em, transparent 0.1em);
   background-size: 1em 3em;
   -webkit-animation-name: example;
-          animation-name: example;
+  animation-name: example;
   -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-duration: 2s;
   min-height: 100% !important;
   min-width: 100% !important;
   text-align: center;
@@ -76,7 +76,6 @@ h1 {
   font-size: 5vmax;
   text-shadow: 1px 1px 50px aqua;
   position: relative;
-  z-index: 95;
   -webkit-animation-name: example3;
           animation-name: example3;
   -webkit-animation-duration: 2s;
@@ -86,7 +85,7 @@ h1 {
 @-webkit-keyframes example2 {
   0% {
     background-color: rgba(170, 255, 0, 0);
-    left: 3000px;
+    left: 30px;
     top: 0px;
   }
   25% {
@@ -96,7 +95,7 @@ h1 {
   }
   50% {
     background-color: rgba(179, 255, 0, 0.112);
-    left: -100px;
+    left: 100px;
     top: 0px;
   }
   75% {
@@ -114,7 +113,7 @@ h1 {
 @keyframes example2 {
   0% {
     background-color: rgba(170, 255, 0, 0);
-    left: 3000px;
+    left: 30px;
     top: 0px;
   }
   25% {
@@ -124,7 +123,7 @@ h1 {
   }
   50% {
     background-color: rgba(179, 255, 0, 0.112);
-    left: -100px;
+    left: 100px;
     top: 0px;
   }
   75% {
@@ -142,7 +141,7 @@ h1 {
 @-webkit-keyframes example3 {
   0% {
     background-color: rgba(170, 255, 0, 0);
-    top: 300px;
+    top: 30px;
     left: 0px;
   }
   25% {
@@ -152,7 +151,7 @@ h1 {
   }
   50% {
     background-color: rgba(179, 255, 0, 0);
-    top: -100px;
+    top: 100px;
     left: 0px;
   }
   75% {
@@ -170,7 +169,7 @@ h1 {
 @keyframes example3 {
   0% {
     background-color: rgba(170, 255, 0, 0);
-    top: 300px;
+    top: 30px;
     left: 0px;
   }
   25% {
@@ -180,7 +179,7 @@ h1 {
   }
   50% {
     background-color: rgba(179, 255, 0, 0);
-    top: -100px;
+    top: 100px;
     left: 0px;
   }
   75% {

@@ -7,6 +7,7 @@ import { defineStore } from 'pinia'
 
 
 
+
 export const useAlertsStore = defineStore('alertStore', {
   // other options...
 })
@@ -23,6 +24,7 @@ export const useCounterStore = defineStore('counter', {
   //computed
   getters: {
     doubleCount: (state) => state.count * 2,
+
 
   },
 

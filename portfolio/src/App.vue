@@ -1,5 +1,5 @@
 <template>
-  <div class="jungle">00</div>
+  <div class="jungle"><p>{{  date }}</p></div>
   <NavBar />
 <VisorComp />
   <router-view />
@@ -14,6 +14,7 @@ import VisorComp from "@/components/VisorComp.vue";
 export default {
   data(){
 return{
+  date:new Date(),
 
 }
   },
@@ -21,6 +22,9 @@ return{
     NavBar,VisorComp
  
   },
+  props:{
+    visorStatus:Boolean
+  }
 
   }
 ;
