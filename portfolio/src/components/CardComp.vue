@@ -1,7 +1,7 @@
 <template>
   <div class="template">
     <div class="grid-bg ba-grid anim p-4">
-    <div class="row d-flex m-auto">  <p> ITEM TYPE: {{ store.catalogue[store2.count].tech }} </p>  </div>
+    <div class="row d-flex m-auto">   </div>
 
   <div class="inner"></div>
 </div>
@@ -38,7 +38,10 @@
 <div class="row">
 
 <div class="col-8"><h6 class="text-success">    Lorem ipsum dolor sit amet,
-<br /> consectetur adipisicing elit.</h6></div>
+<br /> consectetur adipisicing elit.</h6>
+<br />
+<p> ITEM TYPE: {{ store.catalogue[store2.count].tech }} </p>
+</div>
 <div class="col-4"> <button class="btn btn-sm btn-success">BUY</button></div>
 </div>
 

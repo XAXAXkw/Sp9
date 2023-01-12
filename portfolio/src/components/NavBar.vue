@@ -14,7 +14,7 @@
         </div>
 
         <button
-          class="navbar-toggler p-4"
+          class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -28,7 +28,7 @@
 
 
 
-        <div class="collapse navbar-collapse m-4 " id="navbarSupportedContent">
+        <div class="collapse navbar-collapse  " id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-4 mb-lg-0 p-4">
 
            
@@ -159,7 +159,7 @@ v-if="Vsearcher"
 
 
 
-<p class="B6 p-2" > <a href="#">cat</a>|<a href="#">eng</a>|<a>esp</a>|<a>fr </a></p>    <div class="container"> ivancuadros.com<img style="height: 25px" src="@/assets/cursor.gif" /> </div>
+<p class="B6 p-2" > <a >cat</a>|<a href="#">eng</a>|<a>esp</a>|<a>fr </a></p>    <div class="container"> ivancuadros.com<img style="height: 25px" src="@/assets/cursor.gif" /> </div>
 
   
 
@@ -187,7 +187,9 @@ components:{
 </script>
 
 <style lang="css" scoped>
-
+.navbar{
+max-height: min-content;
+}
 
 .searcher{
   background-color: rgba(153, 205, 50, 0.369);
@@ -204,8 +206,8 @@ a {
   /*background: rgb(19, 65, 29);*/
   background: linear-gradient(
     153deg,
-    rgb(19, 65, 29) 8%,
-    rgb(34, 195, 69) 49%,
+    rgba(19, 65, 29, 0.535) 8%,
+    rgba(34, 195, 69, 0.689) 49%,
     rgb(45, 253, 177) 100%
   );
 }

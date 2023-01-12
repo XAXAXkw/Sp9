@@ -3,76 +3,53 @@
     <div class=" container" >
 <div class="container ">
 
+<div class="cartModal">
 
-<div class="row ">|<h1>SHOP</h1>| <div class="container ">
-      <h6>
-     <a href="#" style="color:green">-|BACK|-</a>|<a href="#" style="color:red">-|NEXT|-</a> 
-      </h6>
-      <img  class="xlogo" src="../assets/xaxaxlogo16.png"/>{{ store.catalogue.length }}
-      </div>
+<ul>
+cart demo
+<li
+v-for="item in store.cartList"
+:key="item"
+>
+id:{{ item.id }} added | price:<span class="redneon">{{ item.price }}$</span>
+</li>
+</ul>
+<hr />
+<span class="redneon">TOTAL: {{ this.total }}$</span></div>
 
 
-<div class="container wrapper  d-flexbox">
+<div class="row ">|<h1>SHOP</h1>| 
+
+
+<div class="container wrapper  d-flexbox flex-wrap">
 
     
-    <div class="card thingreen">
+    <div 
+    class="card thingreen d-flexbox"
+    v-for="item in store.catalogue " :key="item"
+    >
         <div class="container rounded text-light bg-success d-block border border-success m-auto">
         <div class="row">
       
            <div class="col">
-              ITEM# {{ store.catalogue[0].id}}
+              ITEM# {{ item.id}}
            </div>
 
            <div class="col">
-           <h6 style="color:orange">PRICE:{{store.catalogue[0].price}}$</h6>
+           <h6 style="background-color:  rgb(47, 18, 50);padding:5px;border-radius:2em" class="redneon">PRICE:{{item.price}}$</h6>
            </div>
         </div>
         </div>
 
-    <hr />
     
-    <p>Title:<br />{{ store.catalogue[0].name }}</p>
-    <h4>INFO CARD</h4>
-    <div class="pixter"></div>
-    
-    
-    
-    
-    
-    
-    <hr />
-    <button class="rounded" onclick="alert(id)" id="1">BUY</button>
+    <br />
+<h6 style="color:rgb(47, 18, 50)">{{ item.name }}</h6>
+
+    <h6>SIZE:{{ item.w }} X {{ item.h }} cms</h6>    
+    <h6>{{ item.tech }}</h6><hr />
+    <div class="pixter ">
+    <img class="pixterpic" :src="fillPic(item.id)" />
     </div>
-
-
-
-
-
-    <div class="card thingreen">
-        <div class="container text-light bg-success d-block border border-success m-auto">
-        <div class="row">
-      
-           <div class="col">
-              ITEM# 327
-           </div>
-
-           <div class="col">
-           <h6 style="color:orange">PRICE:100$</h6>
-           </div>
-           <br />
-           <br />
-           <br />
-           <br />
-           <br />
-
-        </div>
-        </div>
-
-    <hr />
-    
-    <p>Title IITEM</p>
-    <h4>INFO CARD</h4>
-    <div class="pixter"></div>
     
     
     
@@ -80,7 +57,7 @@
     
     
     <hr />
-    <button onclick="alert(id)" id="2">BUY</button>
+    <button class="rounded" @click="addToCart(item)">BUY</button>
     </div>
 
 
@@ -88,34 +65,13 @@
 
 
 
-    <div class="card thingreen">
-        <div class="container text-light bg-success d-block border border-success m-auto">
-        <div class="row">
-      
-           <div class="col">
-              ITEM# 327
-           </div>
 
-           <div class="col">
-           <h6 style="color:orange">PRICE:100$</h6>
-           </div>
-        </div>
-        </div>
 
-    <hr />
-    
-    <p>Title IITEM</p>
-    <h4>INFO CARD</h4>
-    <div class="pixter"></div>
-    
-    
-    
-    
-    
-    
-    <hr />
-    <button>BUY</button>
-    </div>
+
+
+
+
+
 
 
 
@@ -176,17 +132,35 @@
 
 <script>
 import { useCatalogueStore } from '@/stores/catalogueStore.js'
-
-
 const store = useCatalogueStore();
+
+import { useCounterStore } from '@/stores/alertStore.js'
+const store2 = useCounterStore();
+
 
     export default {
         name:'ShopCard',
         data(){
             return{
-                store
+                store,store2,
+                total:0
             }
-        }
+        },
+        computed:{
+
+        },
+        methods:{
+
+fillPic(p){
+  return store.catalogue[p].src
+  //document.getElementsByClassName('img').src=this.catalogue[store2.count].src;
+},
+addToCart(item){
+store.cartList.push(item);
+this.total = this.total + item.price
+}
+
+},
 
     }
 </script>
@@ -197,20 +171,31 @@ const store = useCatalogueStore();
 
 h1{
  font-size:80px;
-    text-shadow: 20px 10px 0px red,
-    20px 20px 0px red,
-    20px 0px 0px red;
+    text-shadow: 20px 10px 0px rgba(255, 0, 72, 0.61),
+    20px 20px 0px  rgba(140, 30, 152, 0.675),
+    20px 0px 0px  rgb(105, 27, 114);
 }
 .card{
-    width:30%;
+    min-width:25%;
 max-height:450px;
     margin:1em;
 
     color:rgba(128, 128, 128, 0.316);
     box-shadow: 1px 1px 50px aqua;
-    z-index:95;
+    z-index:1;
 
  
+}
+.cartModal{
+    background-color: rgba(255, 0, 191, 0.398);
+    padding:1.5em;
+    position: fixed;
+    z-index: 100;
+    margin-left: 50%;
+    border-radius: 2em;
+    font-size: x-small;
+    box-shadow: 1px 1px 50px aqua;
+    width:50%;
 }
 
 .wrapper{
@@ -229,18 +214,19 @@ max-height:450px;
         z-index:1;
 
     }
-    .pixter{
+  }
+  .pixterpic{
 
-      min-height:1000px;
-    }}
+      height:100px;
+      margin:auto;
+    }
+.pixter{ 
+    flex-wrap: wrap;
 
-.pixter{
-height:30px;
-width:200px;
-background-color: green;
+background-color: rgb(0, 0, 0);
 
 margin:auto;
-padding:0em;
+padding:1em;
 }
 
 .templated{
