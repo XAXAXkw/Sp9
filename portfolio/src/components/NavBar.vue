@@ -159,7 +159,7 @@ v-if="Vsearcher"
 
 
 
-<p class="B6 p-2" > ART | Barcelona MMXXIII </p>    <div class="container"> ivancuadros.com<img style="height: 25px" src="@/assets/cursor.gif" /> </div>
+<p class="B6 p-2" > <a href="#">cat</a>|<a href="#">eng</a>|<a>esp</a>|<a>fr </a></p>    <div class="container"> ivancuadros.com<img style="height: 25px" src="@/assets/cursor.gif" /> </div>
 
   
 

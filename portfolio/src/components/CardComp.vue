@@ -1,7 +1,7 @@
 <template>
   <div class="template">
     <div class="grid-bg ba-grid anim p-4">
-    <div class="row d-flex m-auto">  <p> ITEM PRICE: {{ store.catalogue[store2.count].price }}$ </p>  </div>
+    <div class="row d-flex m-auto">  <p> ITEM TYPE: {{ store.catalogue[store2.count].tech }} </p>  </div>
 
   <div class="inner"></div>
 </div>
@@ -14,15 +14,15 @@
       </div>
 
 
-      <div class="row m-2 border">
+      <div class="row m-2 ">
       
-      <div class="col-md-5 border"><h1>32{{ store2.count }}
+      <div class="col-md-5 "><h1>32{{ store2.count }}
        
       </h1> <img style="height: 100px; width:10px;margin-left:2em" src="@/assets/cursor.gif" />
       Title: '{{ store.catalogue[store2.count].name }}'</div>
   
 
-  <div class="col-md-7 border">        <img :src="fillPic(this.store2.count)" /></div>
+  <div class="col-md-7 ">        <img class="jump" :src="fillPic(this.store2.count)" /></div>
        </div>
      
       <hr />
@@ -31,11 +31,18 @@
 
 
       
-      <p>Technique:<span class="redneon">{{ store.catalogue[store2.count].tech }}</span></p>
+      <p>Price:<span class="redneon">{{ store.catalogue[store2.count].price }}$</span></p>
 <div class="container">
 <div class="col d-flexbox border border-success rounded rounded-2 p-1 h6">
-<div><h6 class="text-success">    Lorem ipsum dolor sit amet,
-<br /> consectetur adipisicing elit.</h6>
+<div>
+<div class="row">
+
+<div class="col-8"><h6 class="text-success">    Lorem ipsum dolor sit amet,
+<br /> consectetur adipisicing elit.</h6></div>
+<div class="col-4"> <button class="btn btn-sm btn-success">BUY</button></div>
+</div>
+
+
 
 
 </div>
@@ -107,11 +114,15 @@ p {
   font-size: 0.8em;
 }
 img{
-  display: flex;
-  max-height: 50vmax;
-  max-width: 25em;
-  margin: auto;
+max-height:250px;
 
+
+
+}
+
+.jump{
+  box-shadow: 1px 1px 60px rgba(127, 255, 212, 0.582);
+border:25px solid black;
 }
 .pic {
   color: rgb(6, 41, 38);
@@ -125,9 +136,8 @@ img{
 
 
 
-  align-self: center;
   margin: auto;
-  padding: 10px;
+
 }
 h6{
   font-size: 0.8vmax;
