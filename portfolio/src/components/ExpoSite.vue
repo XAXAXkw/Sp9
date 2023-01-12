@@ -1,4 +1,4 @@
-<template >
+<template>
     <div class="template p-4">
 <VisorComp />
 

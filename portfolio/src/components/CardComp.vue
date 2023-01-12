@@ -7,18 +7,28 @@
 </div>
     <div class="container thingreen m-auto w-75 w-md-50 w-lg-50 d-flexbox">
       <p style="color: rgb(42, 74, 63);">Artwork     {{ store.catalogue[store2.count].id}}</p>
-
-      <div class="row m-2"> <h1>32{{ store2.count }}</h1>
-      Title: '{{ store.catalogue[store2.count].name }}'</div>
-     
-      <hr />
-      
       <div class="container ">
       <h6>
      <a  @click="store2.count--"  style="color:green">-|BACK|-</a>|<a @click="store2.count++"  style="color:red">-|NEXT|-</a> 
       </h6>
       </div>
-      <img style="height: 25px" src="@/assets/cursor.gif" />
+
+
+      <div class="row m-2 border">
+      
+      <div class="col-md-5 border"><h1>32{{ store2.count }}
+       
+      </h1> <img style="height: 100px; width:10px;margin-left:2em" src="@/assets/cursor.gif" />
+      Title: '{{ store.catalogue[store2.count].name }}'</div>
+  
+
+  <div class="col-md-7 border">        <img :src="fillPic(this.store2.count)" /></div>
+       </div>
+     
+      <hr />
+      
+  
+
 
       
       <p>Technique:<span class="redneon">{{ store.catalogue[store2.count].tech }}</span></p>

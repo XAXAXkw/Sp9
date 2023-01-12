@@ -1,6 +1,6 @@
 <template>
     <div>
-    <div class=" container " >
+    <div class=" container" >
 <div class="container ">
 
 
@@ -208,6 +208,8 @@ max-height:450px;
 
     color:rgba(128, 128, 128, 0.316);
     box-shadow: 1px 1px 50px aqua;
+    z-index:95;
+
  
 }
 
@@ -224,6 +226,8 @@ max-height:450px;
         width:75%;
         margin:auto;
         margin-top: 2em;
+        z-index:1;
+
     }
 }
 
@@ -245,6 +249,7 @@ opacity: 0.2;
 min-height:100%;
 min-width:100%;
 margin:0px;
+
 }
 
 

@@ -1,14 +1,19 @@
+.weeds{
+  background-image: url('../assets/bkg_weed_float.png');
 
+  z-index:100;
+  pointer-events: none;
+}
 .jungle{
  // background-image: url('../assets/bkg_weed_float.png');
-  opacity: 0.5;
+ background-image: url('../assets/tigerbkg.svg');
+  opacity: 0.2;
   position: absolute;
-  z-index:90;
+  z-index:1;
   /*background-color: #9d146239;*/
-  min-width:100vw;
-  min-height:200vw;
-  background-size: 1200px;
-  background-repeat: no-repeat;
+min-width:100%;
+min-height: 100rem;;
+background-size: cover;
   pointer-events: none;
 }
 .template{
@@ -54,7 +59,7 @@
 
   /* The element to apply the animation to */
   p{
-    width: 10em;
+
 
     position: relative;
     background-color: rgba(170, 255, 0, 0);
@@ -65,6 +70,7 @@
     font-size: 5vmax;
   text-shadow: 1px 1px 50px aqua;
     position: relative;
+    z-index:95;
 
     animation-name: example3;
     animation-duration: 2s;

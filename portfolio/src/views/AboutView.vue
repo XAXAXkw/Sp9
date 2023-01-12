@@ -1,12 +1,12 @@
 <template>
-  <div class="container  template">
+  <div class=" container  template">
 
 
 
 
-    <div class="container"><SnapShot />
+    <div class="container about m-4 w-50"><SnapShot />
    <div class="row">
-   <div class="col-4">      <div class="Pic col-8"><h1>BIO</h1></div></div>
+   <div class="row">      <div class="Pic col-8"><h1>BIO</h1></div></div>
    <div class="col-8 d-flexbox">     <div class="container">  
     <img  style="height:10em;margin:0.1em" src="../assets/fruit1icon.gif"/>
     <br />
@@ -18,14 +18,36 @@
  
   
 
-      <div class="col-12 col-md-4 p-4 m-auto rounded d-block">
+      <div class="cm-auto rounded d-block">
        <h6>date:</h6>
-        <div class="row m-auto d-flex about">
-          <div>
+
+
+        <div class=" m-2 text-wrap">
+          <div><p>
+                    Lorem ipsum dolor sit <a target="_blank" href="https://fr.wikipedia.org/wiki/Luis_Moln%C3%A9">Lluís MOLNÉ</a> amet consectetur adipisicing elit. Voluptatibus
+                    minima saepe consectetur animi magni officiis maxime vel placeat?
+                  </p>
             <div>
-              <div class="row">
+              <div>
+
+              <div class="container  text-center text-wrap  thingreen">
+                
+                  <h6>Consequuntur providents<a target="_blank" href="https://fr.wikipedia.org/wiki/Luis_Moln%C3%A9">Julius POLEK</a> </h6>
+                  <h5>delectus omni</h5>
+              </div>
+
+
+
                 <div class="colborder">
                   <div class="container bg-dark border border-danger rounded-4 bg-success "><h3>2023</h3></div>
+
+
+
+
+
+
+
+
                 </div>
               </div>
               <div class="colborder m-4">
@@ -205,14 +227,14 @@
                   <div class="container labelio"><h1>1995</h1></div>
                 </div>
               </div>
-              <div class="colborder">
-                <div class="container">
+              <div class=" border">
+                <div class="container w-100 border m-auto ">
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+                    Lorem ipsum dolor sit <a target="_blank" href="https://fr.wikipedia.org/wiki/Luis_Moln%C3%A9">Lluís MOLNÉ</a> amet consectetur adipisicing elit. Voluptatibus
                     minima saepe consectetur animi magni officiis maxime vel placeat?
                   </p>
-                  <h6>Consequuntur provident</h6>
-                  <h5>delectus omnis</h5>
+                  <h6>Consequuntur providents<a target="_blank" href="https://fr.wikipedia.org/wiki/Luis_Moln%C3%A9">Julius POLEK</a> </h6>
+                  <h5>delectus omni</h5>
                 </div>
               </div>
             </div>
@@ -293,6 +315,15 @@ export default{
 
 </script>
 <style lang="scss" scoped>
+a{
+  color:rgb(255, 0, 166);
+  text-shadow:1px 0px 15px rgb(71, 12, 61)
+}
+a:hover{
+  color:rgb(255, 0, 21);
+  text-shadow:1px 0px 25px rgb(255, 0, 119)
+}
+
 .Pic {
 
   height: 3em;
@@ -318,7 +349,8 @@ export default{
 
 .colborder{
  text-shadow: 1px 1px 50px yellow;
-  padding:2em;
+ width:50em;
+
 
 }
 .labelio{

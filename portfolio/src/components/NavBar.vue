@@ -3,7 +3,7 @@
 
   <LogBadge />
 
-    <nav class="navbar d-flex  navbar-expand-lg">
+    <nav class="navbar menu d-flex  navbar-expand-lg">
       <div class="container-fluid d-flex  justify-content-evenly">
         <div class="col-2 d-flex ">
 
@@ -102,21 +102,21 @@
         </div>
       </div>
     </nav>
-    <div class="d-flex justify-content-evenly border">
+    <div class="d-flex justify-content-evenly ">
 
 
-<div class="container d-flex justify-content-evenly border searcher"
+<div class="container d-flex justify-content-evenly  searcher"
 v-if="Vsearcher"
 >
 
-<div class="row border">
+<div class="row ">
 
-<div class="col-6 border">   
+<div class="col-6 ">   
 
-<div class="container border">
+<div class="container ">
 
-<div class="row border">
-<div class="container border"> <a class="nav-link active" aria-current="page" href="#">
+<div class="row ">
+<div class="container "> <a class="nav-link active" aria-current="page" href="#">
               <router-link to="/"><button  class="btn btn-sm btn-success m-4">
               
                 
@@ -136,7 +136,7 @@ v-if="Vsearcher"
 
 
 
-<div class="col border">
+<div class="col ">
 
 <form class="d-flex row m-2 p-1" role="search">
             <input
@@ -194,14 +194,14 @@ a {
   font-size: 11px;
   letter-spacing: normal;
 }
-.navbar {
+.menu{
 
-  background: rgb(19, 65, 29);
+  /*background: rgb(19, 65, 29);*/
   background: linear-gradient(
     153deg,
-    rgba(19, 65, 29, 1) 8%,
-    rgba(34, 195, 70, 1) 49%,
-    rgba(45, 253, 175, 1) 100%
+    rgb(19, 65, 29) 8%,
+    rgb(34, 195, 69) 49%,
+    rgb(45, 253, 177) 100%
   );
 }
 a {
