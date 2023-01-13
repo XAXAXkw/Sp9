@@ -30,12 +30,16 @@
      <div class="thingreen template mt-4 row" 
     v-if="showAdder">
     <div class="row">    
-    <div class="container">    ADD to Catalogue    
+    <div class="container ">    ADD to Catalogue    
     <button class="btn  btn-sm btn-success" @click="  addArtwork()">ADD</button></div>
 </div>
-<div class="row thingreen m-4 w-25 d-flex flex-wrap">   <div class="container">
+<div class="row   thingreen m-4 w-25 d-flex flex-wrap">   <div class="container">
    
-   <p>paint <input type="radio" id="newId"/></p>
+   <div class="row w-100 ">
+   <div class="col-2">  </div>
+   <div class="col-10"></div>
+  </div>
+  <p>paint <input type="radio" id="newId"/></p>
    <p>draw <input type="radio" id="newId"/></p>
    <p>music <input type="radio" id="newId"/></p>
    <p>anim <input type="radio" id="newId"/></p>
@@ -46,9 +50,8 @@
    </div> </div>
     
 
-    <div class="col-4 ">
-    <br />
-   id: <input id="newId"/>
+    <div class="col-4 micrus">
+ 
    <br />
    name: <input id="newName"/>
  
@@ -57,13 +60,13 @@
    <br />
 
     </div>
-    <div class="col-4">
+    <div class="col-4 micrus">
         <br />
-   w: <input type="number" id="newId"/>
+   w: <input type="number" id="newW"/>
    <br />
-   h: <input type="number"  id="newName"/>
+   h: <input type="number"  id="newH"/>
    <br />
-   tech: <input id="newId"/>
+   tech: <input id="newTech"/>
    <br /></div>
     </div>
 
@@ -90,21 +93,53 @@
 
 <script>
 
-import { Artwork } from '../stores/ArtworkClass';
+import { useCatalogueStore } from '../stores/catalogueStore';
+const masterStore = useCatalogueStore()
+
+class Artwork {
+    constructor(id,name='pepe',price=0,w=0,h=0,tech='mixed media',src){
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.w = w;
+        this.h = h;
+        this.tech = tech;
+        this.src = src;
+
+    }
+    get prop() {
+        return this._prop;
+    }
+     
+    set prop(prop) {
+        this._prop = prop;
+    }
+
+
+
+    
+}
 
 
     export default {
         name:'MasterZone',
         data(){
             return{
-                artwork:{},showAdder:true,showDel:true
+                artwork:{},showAdder:true,showDel:true,masterStore
             }
         },
         methods:{
             addArtwork(){
-         
-                this.artwork = new Artwork(22,'name',0,10,10,'tech','src');
-                console.log(this.artwork)
+                let newId = masterStore.catalogue.length;
+         let newName = document.getElementById('newName').value;
+         let newW = document.getElementById('newW').value;
+         let newH = document.getElementById('newH').value;
+         let newTech = document.getElementById('newTech').value;
+                let artwork1 = new Artwork(newId,newName,newW,newH,newTech);
+                console.log(artwork1);
+
+                masterStore.catalogue.push(artwork1);
+                console.log(masterStore.catalogue);
             }
         }
 
@@ -114,11 +149,8 @@ import { Artwork } from '../stores/ArtworkClass';
 <style lang="scss" scoped>
 input{
     margin:5px;
-    display: flex;
-
-width:150px;
-
-
+    align-self: center;
+    max-width:max-content;
 }
 
 .buttonLinker{

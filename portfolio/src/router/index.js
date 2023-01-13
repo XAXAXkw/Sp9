@@ -5,7 +5,7 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: () => import('@/components/MasterZone.vue')
+    component: () => import('@/components/LogTest.vue')
   },
   {
     path: '/about',
