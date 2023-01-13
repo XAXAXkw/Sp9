@@ -148,6 +148,7 @@ border:25px solid black;
 }
 .pic {
 
+  z-index:100;
   color: rgb(6, 41, 38);
   background: rgb(19, 65, 29);
 

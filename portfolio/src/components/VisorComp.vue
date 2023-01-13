@@ -1,7 +1,10 @@
 <template>
     <div>
 
-  HELLOOOOW
+ <p
+ class="thingreen align-middle"
+ @click="visorStatus=!visorStatus"
+ >VisorStatus <span class="redneon">{{ visorStatus }}</span></p>
 
 
 <div 
@@ -32,7 +35,7 @@ class="wrapped"
 <div class="container border">100
 
 </div>
-
+<div class="sketchfab-embed-wrapper"> <iframe title="Headmouse" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/56ea7b4579634282934a80d930d9120a/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/headmouse-56ea7b4579634282934a80d930d9120a?utm_medium=embed&utm_campaign=share-popup&utm_content=56ea7b4579634282934a80d930d9120a" target="_blank" style="font-weight: bold; color: #1CAAD9;"> Headmouse </a> by <a href="https://sketchfab.com/xaxax?utm_medium=embed&utm_campaign=share-popup&utm_content=56ea7b4579634282934a80d930d9120a" target="_blank" style="font-weight: bold; color: #1CAAD9;"> xaxax </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=56ea7b4579634282934a80d930d9120a" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
 </div>
 
 
@@ -57,7 +60,7 @@ class="wrapped"
         
         data(){
             return{
-visorStatus:true
+visorStatus:false
             }
         },
      
@@ -67,13 +70,13 @@ visorStatus:true
 <style lang="scss" >
 .wrapped{
     background-color: rgba(9, 19, 15, 0.958);
-    min-width: 100%;
+    min-width: 800px;
     min-height: 1000em !important;
     margin:0;
-    float: inline-start;
+
     position:absolute;
-    z-index:100;
-    max-width: 100%;
+    z-index:1;
+
 
 }
 .topper{

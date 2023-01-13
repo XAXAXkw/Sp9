@@ -1,7 +1,8 @@
 <template>
-  <div class="jungle"><p>{{  date }}</p></div>
-  <NavBar />
-<VisorComp />
+  <div class="jungle">
+
+<p>{{  date }}</p></div>
+  <NavBar />  <VisorComp />
   <router-view />
 </template>
 <script>
@@ -43,14 +44,19 @@ max-width: 800px;
 }
 
 
-h6,
-p {
+
+p,h5,h6{
   font-family: "Press Start 2P", cursive;
-  font-size: 1.2vmin;
+  font-size: 0.8vmin;
 }
-h1,
-h2 {
+h1,h2,h3,h4{
   font-family: "Press Start 2P", cursive;
-  font-size: 5vmax;
+  font-size: 5vmin;
+}
+h1{
+  font-size: 8vmax;
+}
+*{
+  font-size: 2vmin;
 }
 </style>

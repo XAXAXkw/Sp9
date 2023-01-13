@@ -6,7 +6,7 @@
 
 .jungle {
   background-image: url("../assets/tigerbkg.svg");
-  opacity: 0.3;
+  opacity: 0.1;
   position: absolute;
   z-index: 1;
   /*background-color: #9d146239;*/
