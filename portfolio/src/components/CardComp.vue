@@ -61,9 +61,12 @@
 
 <div class="waterpic">   <img  class="xlogo" src="../assets/xaxaxlogo16.png"/></div> 
         PIC: 327 {{ store2.count }}
-        <hr />
-        <img :src="fillPic(this.store2.count)" />
-        <br />
+        <hr />LINK
+        <router-link :to="{path:'./VisorComp.vue'}" >
+        <img 
+     
+        :src="fillPic(this.store2.count)" />
+        <br /></router-link>
         <hr />
         <div >Similar Artwork:<hr />
         

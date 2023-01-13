@@ -9,6 +9,10 @@ class Artwork {
         this.src = src;
 
     }
+
+
+
+    
 }
 
 let artwork1 = new Artwork(666);
@@ -23,5 +27,7 @@ LIST.push(artwork1,artwork2,artwork3,artwork4);
 console.log(LIST);
 
 
+
+// export default class ClassName {Artwork}
 
 //     {id:0,name:'Jukebox',price:7500,w:200,h:145,tech:'painting',src:require("@/assets/paint/organs.jpg")},

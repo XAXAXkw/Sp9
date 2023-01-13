@@ -1,7 +1,7 @@
 <template>
     <div>
 
-  
+  HELLOOOOW
 
 
 <div 
@@ -54,9 +54,10 @@ class="wrapped"
 
     export default {
         name:'VisorComp',
+        
         data(){
             return{
-
+visorStatus:true
             }
         },
      
