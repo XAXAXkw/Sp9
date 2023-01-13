@@ -25,7 +25,7 @@ class="wrapped"
 
     >
     
-    <h4>VISOR</h4>
+    <h4>3D VISOR</h4>
 
 <button
 @click="visorStatus=false"
