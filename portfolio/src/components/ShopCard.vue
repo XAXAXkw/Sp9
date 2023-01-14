@@ -10,8 +10,8 @@
 
 
 <h5 >
-<button @click="modalOn=!modalOn">X</button>
-cart demo</h5>
+<button class="btn btn-success text-light" @click="modalOn=!modalOn">CART - <span class="redneon">{{ store.cartList.length }}</span></button>
+ITEMS SELECTED</h5>
 <div class="cartModal"
 v-if="modalOn"
 
@@ -41,14 +41,19 @@ id:{{ item.id }} added | price:<span class="redneon">{{ item.price }}$</span>
 <span class="redneon" style="font-size:25px">TOTAL: {{ this.total }}$</span>
 <br />
 
-<div class="row w-25" style="font-size: x-small;">
 
 
 
 
 
-<button class="btn btn-success btn-sm m-1">Check Out</button>
-<button @click="clearCart()" class="btn btn-danger btn-sm m-1">Clear Cart</button>
+<div class="row w-100 ">
+<div class="container d-flex" style="font-size: x-small;">
+<div class="col "><button class="btn btn-success btn-sm ">Check Out</button></div>
+<div class="col "><button @click="clearCart()" class="btn btn-danger btn-sm ">Clear</button></div>
+<div class="col"></div>
+</div>
+
+
 </div>
 
 </div>
@@ -65,17 +70,19 @@ id:{{ item.id }} added | price:<span class="redneon">{{ item.price }}$</span>
     v-for="item in store.catalogue " :key="item"
     >
         <div class="container rounded text-light bg-success d-block border border-success m-auto">
+
         <div class="row">
       
-           <div class="col">
+           <div class="col-4">
               ITEM# {{ item.id}}
            </div>
 
-           <div class="col">
+           <div class="col-4">
            <h6 style="background-color:  rgb(47, 18, 50);padding:5px;border-radius:2em" class="redneon">PRICE:{{item.price}}$</h6>
            </div>
         </div>
         </div>
+        
 
     
     <br />
@@ -225,13 +232,13 @@ max-height:450px;
     color:rgba(128, 128, 128, 0.316);
     box-shadow: 1px 1px 50px aqua;
     z-index:1;
-
+background-color: black;
  
 }
 
 
 .cartModal{
-    background-color: rgba(36, 7, 29, 0.755);
+    background-color: rgba(36, 7, 29, 0.844);
     padding:1.5em;
     position: fixed;
     z-index: 100;
@@ -239,7 +246,8 @@ max-height:450px;
     border-radius: 2em;
     font-size: x-small;
     box-shadow: 1px 1px 50px aqua;
-    width:50%;
+    width:35%;
+ 
 }
 
 .wrapper{
@@ -248,6 +256,10 @@ max-height:450px;
 }
 
 @media only screen and (max-width: 850px){
+    .cartModal{
+        margin-left: 60%;
+        padding:0.5em;
+    }
     .wrapper{
         flex-direction: column;
     }
@@ -268,6 +280,7 @@ max-height:450px;
       padding:auto;
       flex-wrap: wrap;
       max-width: 100%;
+      
     }
 .pixter{ 
     flex-wrap: wrap;

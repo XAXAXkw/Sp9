@@ -2,6 +2,17 @@
   <div>
 
   <LogBadge />
+  <div class="navigator">
+  
+  <img style="height:300px" src="../assets/arrow.gif"/>
+  <img style="height:300px;align:right" src="../assets/arrow.gif"/>
+  </div>
+  <div class="navigator2">
+  
+  <img style="height:300px;transform: scaleX(-1);" src="../assets/arrow.gif"/>
+  <img style="height:300px;transform: scaleX(-1);:right" src="../assets/arrow.gif"/>
+  </div>
+
 
     <nav class="navbar menu d-flex  navbar-expand-lg">
       <div class="container-fluid d-flex  justify-content-evenly">
@@ -240,5 +251,19 @@ a:hover {
 .B6{
   color:green;
 
+}
+.navigator{
+  position:absolute;
+margin-top:180px;
+
+ 
+}
+.navigator2{
+  position:absolute;
+  margin-top:180px;
+  margin-left:70%;
+  max-width:800px;
+
+ 
 }
 </style>
