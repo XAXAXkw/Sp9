@@ -5,6 +5,7 @@
    
    @countedHijo="store2.count = $event"/>
   <div class="template">
+  
     <div class="grid-bg ba-grid anim p-4">
     <div class="row d-flex m-auto">   </div>
 

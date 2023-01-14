@@ -1,7 +1,7 @@
 <template >
     <div class="concrete p-4">
 
-<div class="row border bg-success border-danger p-1 rounded m-2">
+<div class="row border bg-dark border-danger p-1 rounded m-4">
  
 Logtest
 
@@ -16,14 +16,41 @@ Logtest
    <hr />
    <div class="thingreen bg-light">APIs </div>
 </div>
-<div class="col">{{ data }}</div>
+<div class="col-6">
+
+
+
+
+
+
+<div class="container bg-success border">
+result 1: </div>
+<div class="container bg-success border">
+result 2: </div>
+<div class="container bg-success border">
+result : 
+<ul>
+<li
+v-for="item in LIST" :key="item"
+>
+{{ item.name }}
+</li>
+</ul>
+</div>
+
+
 </div>
 </div>
-<button @click="getDB()">GET swapi DATA</button>
+</div>
+<div class="container"><button @click="getDB()">GET swapi DATA</button>
+<br />
 <button @click="getDB2()">GET FIREbase DATA</button>
+<br /></div>
+
+<br />
 </div>
 <div class="container m-4 p-4">
-<h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae accusamus corporis facere ex, beatae natus, quaerat culpa excepturi fuga, blanditiis et in sit quidem incidunt inventore debitis obcaecati laboriosam optio!
+<h3 id="">test importing class.js:
 </h3>
 eee</div>
     </div>
@@ -32,6 +59,10 @@ eee</div>
 <script>
 
 import axios from 'axios'
+
+import Test from '../stores/TestClass.js'
+let newTest = new Test(666,'pepe');
+console.log(newTest)
     export default {
         name:'LogTest',
         data(){
@@ -39,9 +70,11 @@ import axios from 'axios'
 LIST:[], data:{}
             }},
      methods:{
-         getDB(){
+        async getDB(){
+            await
             axios.get('https://swapi.dev/api/planets/')
-            .then(res=>{console.log(res.data.results);
+            .then(res=>{this.LIST = res.data.results;
+                console.log(this.LIST)
             });
             
          },
@@ -76,6 +109,6 @@ background-blend-mode: multiply;
     padding:2em;
     z-index:10;
     color:rgb(63, 33, 66);
-    text-shadow: 1px 0.5em 5px rgba(2, 28, 1, 0.516);
+    text-shadow: 0.2em 0.2em 4px rgba(2, 28, 1, 0.658);
 }
 </style>

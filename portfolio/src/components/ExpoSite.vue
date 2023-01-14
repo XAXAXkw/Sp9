@@ -1,8 +1,14 @@
 <template>
     <div class="template p-4">
+        <div class="thingreen template">
 
+   
 
-<img src="../assets/icon_folks.svg"/>
+<div class="container">    <div> EXPOzone </div></div>
+
+</div >
+
+<img src="../assets/icon_folks.svg" style="width:250px"/>
 <ul>
 
 <li

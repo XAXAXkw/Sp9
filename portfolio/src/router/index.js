@@ -54,6 +54,11 @@ const routes = [
     path: '/shopcard',
     name: 'shopcard',
     component: () => import('@/components/ShopCard.vue')
+  }  ,
+  {
+    path: '/masterzone',
+    name: 'masterzone',
+    component: () => import('@/components/MasterZone.vue')
   }
 ]
 

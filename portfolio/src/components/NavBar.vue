@@ -98,7 +98,7 @@
 
           </ul>
 
-         <button  @click="Vsearcher=!Vsearcher">SEARCH</button>
+         <button  @click="Vsearcher=!Vsearcher">     <router-link to="/masterzone">MASTER</router-link></button>
           
         </div>
       </div>
