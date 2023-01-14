@@ -44,7 +44,7 @@ v-for="item in LIST" :key="item"
 </div>
 <div class="container"><button @click="getDB()">GET swapi DATA</button>
 <br />
-<button @click="getDB2()">GET FIREbase DATA</button>
+<button @click="getDB3()">GET FIREbase DATA</button>
 <br /></div>
 
 <br />
@@ -79,13 +79,15 @@ LIST:[], data:{}
             
          },
          getDB2(){
-            axios.get('https://xaxaxdata-default-rtdb.europe-west1.firebasedatabase.app/t1.firebasedatabase.app/')
+
+            //axios.get('https://PROJECT-NAME.firebaseio.com/users/' + user.uid + '.json?auth=DATABASE-SECRET')
+            axios.get('https://xaxaxdata-default-rtdb.europe-west1.firebasedatabase.app/t1.firebasedatabase.app/' + '.json?auth=DATABASE-SECRET' )
             .then(res=>{console.log(res.data);
             });
             
          },
          async getDB3(){ await
-            axios.get('https://swapi.dev/api/planets/')
+            axios.get('http://localhost:8080/catalogue')
             .then( res=>{res.data = this.LIST;
                 console.log(this.LIST)
             });
