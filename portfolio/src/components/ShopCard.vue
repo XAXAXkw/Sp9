@@ -71,14 +71,14 @@ id:{{ item.id }} added | price:<span class="redneon">{{ item.price }}$</span>
     >
         <div class="container rounded text-light bg-success d-block border border-success m-auto">
 
-        <div class="row">
+        <div class="row d-flexbox ">
       
-           <div class="col-4">
-              ITEM# {{ item.id}}
+           <div class="col-2">
+              <h6>ITEM# {{ item.id}}</h6>
            </div>
 
-           <div class="col-4">
-           <h6 style="background-color:  rgb(47, 18, 50);padding:5px;border-radius:2em" class="redneon">PRICE:{{item.price}}$</h6>
+           <div class="col-6 p-2">
+           <h6 style="background-color:  rgb(47, 18, 50);padding:5px;border-radius:2em" class="redneon">{{item.price}}$</h6>
            </div>
         </div>
         </div>
@@ -219,10 +219,13 @@ clearCart(){
 
 
 h1{
- font-size:80px;
+ font-size:50px;
     text-shadow: 20px 10px 0px rgba(255, 0, 72, 0.61),
     20px 20px 0px  rgba(140, 30, 152, 0.675),
     20px 0px 0px  rgb(105, 27, 114);
+}
+h6{
+    font-size: 10px;
 }
 .card{
     min-width:25%;

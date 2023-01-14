@@ -49,9 +49,12 @@ max-width: 800px;
   color: #9dff00;
 
 
+
 }
 
-
+**{
+  width:75%;
+}
 
 p,h5,h6{
   font-family: "Press Start 2P", cursive;
