@@ -54,7 +54,6 @@ class="wrapped"
 <script>
 
 
-
     export default {
         name:'VisorComp',
         

@@ -1,9 +1,15 @@
 <template>
+  <NaviGator
+  
+   :counted="store2.count"  
+   
+   @countedHijo="store2.count = $event"/>
   <div class="template">
     <div class="grid-bg ba-grid anim p-4">
     <div class="row d-flex m-auto">   </div>
 
   <div class="inner"></div>
+  count: {{  store2.count }}
 </div>
     <div class="container thingreen m-auto w-75 w-md-50 w-lg-50 d-flexbox">
       <p style="color: rgb(42, 74, 63);">Artwork     {{ store.catalogue[store2.count].id}}</p>
@@ -100,6 +106,8 @@ import { useCatalogueStore } from '@/stores/catalogueStore.js'
 const store = useCatalogueStore();
 
 
+import NaviGator from '../components/NaviGator.vue'
+
 
 
 export default {
@@ -117,9 +125,14 @@ methods:{
   },
   data(){
     return{
-        store,store2
+        store,store2,
+        count:Number,
+        gety:Number
     }
   },
+  components:{
+NaviGator
+  }
 };
 </script>
 

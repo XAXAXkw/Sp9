@@ -1,7 +1,9 @@
 <template>
   <div class="jungle">
 
-<p>{{  date }}</p></div>
+<p>{{  date }} - {{ message }}</p>
+
+</div>
   <NavBar />  <VisorComp />
   <router-view />
 </template>
@@ -16,8 +18,14 @@ export default {
   data(){
 return{
   date:new Date(),
+  message:"BETA PORTFOLIO",
+  Timed:''
 
 }
+  },
+  computed:{
+
+ 
   },
   components: {
     NavBar,VisorComp

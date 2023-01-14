@@ -1,7 +1,9 @@
 <template >
     <div class="concrete p-4">
 
-<div class="row border bg-success border-danger p-1 rounded m-2">Logtest
+<div class="row border bg-success border-danger p-1 rounded m-2">
+ 
+Logtest
 
 
 
@@ -9,9 +11,11 @@
 
 <div class="row">
 
-<div class="col-2 border">
-
-1234</div>
+<div class="col-2 border rounded p-2 d-flexbox text-center">
+   <img src="../assets/skull_badge.gif" style="height:50px;width:auto;align:center"/>
+   <hr />
+   <div class="thingreen bg-light">APIs </div>
+</div>
 <div class="col">{{ data }}</div>
 </div>
 </div>
