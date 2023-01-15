@@ -5,7 +5,7 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: () => import('@/components/ShopCard.vue')
+    component: () => import('@/components/FullView.vue')
   },
   {
     path: '/about',
@@ -48,6 +48,11 @@ const routes = [
     path: '/shop',
     name: 'shop',
     component: () => import('@/components/ShopComp.vue')
+  }  ,
+  {
+    path: '/fullview/:id',
+    name: 'fullview',
+    component: () => import('@/components/FullView.vue')
   }
   ,
   {

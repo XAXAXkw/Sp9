@@ -16,7 +16,7 @@
 <script>
 import ShopCard from './ShopCard.vue'
 import CartComp from './CartComp.vue'
-import { useCounterStore } from '@/stores/catalogueStore.js'
+import { useCounterStore } from '@/stores/alertStore.js'
 
 
 const store = useCounterStore();

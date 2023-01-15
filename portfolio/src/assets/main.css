@@ -1,6 +1,6 @@
 .weeds {
   background-image: url("../assets/bkg_weed_float.png");
-  z-index: 100;
+  z-index: 10;
   pointer-events: none;
 }
 

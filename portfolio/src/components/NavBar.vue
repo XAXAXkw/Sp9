@@ -98,7 +98,7 @@
 
           </ul>
 
-         <button  @click="Vsearcher=!Vsearcher">     <router-link to="/masterzone">MASTER</router-link></button>
+         <button class="btn rounded bg-none text-success"  @click="Vsearcher=!Vsearcher">     <router-link to="/masterzone"><img src="../assets/skull_badge.gif" style="height:25px;width:auto;align:center;margin:10px"/>MASTER</router-link></button>
           
         </div>
       </div>
@@ -160,7 +160,12 @@ v-if="Vsearcher"
 
 
 
-<p class="B6 p-2" > </p>    <div class="container"> ivancuadros.com<img style="height: 25px" src="@/assets/cursor.gif" /> </div>
+<p class="B6 p-2" > </p>    <div class="container">
+
+ivancuadros.com
+<img style="height: 25px" src="@/assets/cursor.gif" />   
+
+</div>
 
   
 

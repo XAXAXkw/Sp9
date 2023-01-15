@@ -5,16 +5,17 @@
    
    @countedHijo="store2.count = $event"/>
   <div class="template">
+
   
     <div class="grid-bg ba-grid anim p-4">
     <div class="row d-flex m-auto">   </div>
 
-  <div class="inner"></div>
-  count: {{  store2.count }}
+
+
 </div>
-    <div class="container thingreen m-auto w-75 w-md-50 w-lg-50 d-flexbox">
+    <div class="container thingreen m-auto w-75 w-md-50 w-lg-50 d-flexbox  darko">
       <p style="color: rgb(42, 74, 63);">Artwork     {{ store.catalogue[store2.count].id}}</p>
-      <div class="container ">
+      <div class="container  darko ">
       <h6>
      <a  @click="store2.count--"  style="color:green">-|BACK|-</a>|<a @click="store2.count++"  style="color:red">-|NEXT|-</a> 
       </h6>
@@ -183,6 +184,10 @@ border:25px solid black;
   z-index:100;
 
 
+}
+.darko{
+  background-color: black;
+  box-shadow: 1px 1px 50px aqua;;
 }
 
 .mosaiker{
