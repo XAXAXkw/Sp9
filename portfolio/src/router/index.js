@@ -5,7 +5,7 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: () => import('@/components/MusicBox.vue')
+    component: () => import('@/components/MenuFather.vue')
   },
   {
     path: '/about',
