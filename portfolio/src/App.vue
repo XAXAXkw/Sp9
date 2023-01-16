@@ -1,5 +1,6 @@
 <template>
   <div class="jungle">
+<FullView />
 
 <p>{{  date }} - {{ message }}</p>
 
@@ -10,6 +11,7 @@
 <script>
 import NavBar from "@/components/NavBar.vue";
 import VisorComp from "@/components/VisorComp.vue";
+import FullView from "@/components/FullView.vue";
 
 
 
@@ -28,7 +30,7 @@ return{
  
   },
   components: {
-    NavBar,VisorComp
+    NavBar,VisorComp,FullView
  
   },
   props:{
@@ -45,15 +47,16 @@ return{
 #app {
   font-family: "Press Start 2P", cursive;
   margin:auto;
-max-width: 800px;
+max-width: 1000px;
   color: #9dff00;
 
 
 
 }
 
+
 **{
-  width:75%;
+  width:50%;
 }
 
 p,h5,h6{

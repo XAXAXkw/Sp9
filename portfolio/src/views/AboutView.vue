@@ -4,6 +4,37 @@
 
 
 <h1>BIO</h1>
+<div class="flexicontainer border m-2 p-2">
+  <h3>2023</h3>
+  <div class="container border"><p>
+                    Lorem ipsum dolor sit <a target="_blank" href="https://fr.wikipedia.org/wiki/Luis_Moln%C3%A9">Lluís MOLNÉ</a> amet consectetur adipisicing elit. Voluptatibus
+                    minima saepe consectetur animi magni officiis maxime vel placeat?
+                
+                          </p> 
+                  
+                  <hr />
+                  <ol>
+                  <li>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni facere exercitationem sunt laudantium tempora, nemo pariatur iure, commodi culpa error repellat aperiam quasi reiciendis ipsa quis dicta, vero explicabo veritatis?</p> 
+                  </li>
+                  <li>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni facere exercitationem sunt laudantium tempora, nemo pariatur iure, commodi culpa error repellat aperiam quasi reiciendis ipsa quis dicta, vero explicabo veritatis?</p> 
+                  </li>
+                  <li>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni facere exercitationem sunt laudantium tempora, nemo pariatur iure, commodi culpa error repellat aperiam quasi reiciendis ipsa quis dicta, vero explicabo veritatis?</p> 
+                  </li>
+                  <li>
+                  Lorem ipsum d
+                  </li>
+                  <li>
+                  Lorem ipsum dolor 
+                  </li>
+                  </ol>
+                  
+        
+                  
+                  </div>
+</div>
     <div class="container about m-4 w-50"><SnapShot />
    <div class="row">
    <div class="row">      <div class="Pic col-8"></div></div>
@@ -315,6 +346,21 @@ export default{
 
 </script>
 <style lang="scss" scoped>
+ol{
+      list-style:decimal;
+    
+}
+li {
+  
+  display: block;
+  width: 50%;
+  text-decoration: underline 0.5px;
+  border: dashed 1px rgba(0, 100, 0, 0.391);
+  padding: 10px;
+  margin: 5px;
+}
+
+
 a{
   color:rgb(255, 0, 166);
   text-shadow:1px 0px 15px rgb(71, 12, 61)
@@ -345,6 +391,13 @@ a:hover{
   h1{
     font-size: 25vmin;
     }
+}
+
+.flexicontainer{
+  display:flex;
+  align-self: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .colborder{

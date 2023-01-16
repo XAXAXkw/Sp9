@@ -22,6 +22,11 @@
       </div>
 
 
+
+
+
+
+
       <div class="row m-2 ">
       
       <div class="col-md-5 "><h1>32{{ store2.count }}
@@ -73,7 +78,7 @@
         <router-link :to="{path:'./VisorComp.vue'}" >
         <img 
      
-        :src="fillPic(this.store2.count)" />
+        :src="fillPic(this.store2.count)" class="macross"/>
         <br /></router-link>
         <hr />
         <div >Similar Artwork:<hr />
@@ -150,6 +155,20 @@ p {
 img{
 max-height:250px;
 
+
+
+}
+
+
+.macross:hover{
+  margin-top: 5px;
+max-width:auto;
+min-height:100%;
+  position:absolute;
+  z-index:95;
+  display: flex;
+  margin:auto;
+  flex-wrap: wrap;
 
 
 }

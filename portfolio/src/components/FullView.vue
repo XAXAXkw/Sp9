@@ -1,5 +1,5 @@
 <template>
-    <div v-if="seeMe">
+    <div v-if="seeMe" class="viewer">
 full view <label for="customRange2" class="form-label">Example range</label>
 <input type="range" class="form-range" min="0" max="5" id="customRange2">
 
@@ -23,7 +23,7 @@ alt="green guy" width=320>
         name:'FullView',
         data(){
             return{
-                seeMe:true
+                seeMe:false
             }
         },
         methods:{
@@ -40,17 +40,14 @@ alt="green guy" width=320>
     }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 .viewer{
 position:absolute;
-z-index:100;
+z-index:99;
 margin:0;
 padding:0;
 min-width:100%;
 }
-img {
-  transition:transform 400ms;
-  transform-origin:top left;
-}
+
 
 </style>

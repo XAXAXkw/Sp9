@@ -5,7 +5,7 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: () => import('@/components/FullView.vue')
+    component: () => import('@/components/MusicBox.vue')
   },
   {
     path: '/about',
