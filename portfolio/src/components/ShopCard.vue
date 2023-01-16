@@ -31,8 +31,8 @@ v-if="modalOn"
 
 <li 
 style="background-color:  rgb(47, 18, 50);padding:5px;border-radius:2em;margin-bottom:5px" 
-v-for="item in store.cartList"
-:key="item"
+v-for= "( item, index) in store.cartList"
+:key="index"
 >
 id:{{ item.id }} added | price:<span class="redneon">{{ item.price }}$</span>
 </li>
@@ -67,7 +67,7 @@ id:{{ item.id }} added | price:<span class="redneon">{{ item.price }}$</span>
     
     <div 
     class="card thingreen d-flexbox p-2"
-    v-for="item in store.catalogue " :key="item"
+    v-for= "( item, index) in store.catalogue " :key="index"
     >
         <div class="container rounded text-light bg-success d-block border border-success m-auto">
 
@@ -91,7 +91,11 @@ id:{{ item.id }} added | price:<span class="redneon">{{ item.price }}$</span>
     <h6>SIZE:{{ item.w }} X {{ item.h }} cms</h6>    
     <h6>{{ item.tech }}</h6><hr />
     <div class="pixter ">
+
+        <router-link :to="{path:'visorson/'+ index,params:{id:index}}">
+
     <img class="pixterpic" :src="fillPic(item.id)" />
+    </router-link>
     </div>
     
     

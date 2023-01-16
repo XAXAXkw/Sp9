@@ -1,17 +1,21 @@
 <template>
-  <div class="jungle">
-<FullView />
+  <div >
+
 
 <p>{{  date }} - {{ message }}</p>
 
 </div>
-  <NavBar />  <VisorComp />
+  <NavBar /> 
+
+  
+
   <router-view />
 </template>
 <script>
 import NavBar from "@/components/NavBar.vue";
-import VisorComp from "@/components/VisorComp.vue";
-import FullView from "@/components/FullView.vue";
+
+
+
 
 
 
@@ -30,7 +34,9 @@ return{
  
   },
   components: {
-    NavBar,VisorComp,FullView
+    NavBar,
+
+
  
   },
   props:{

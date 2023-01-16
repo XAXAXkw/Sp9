@@ -35,7 +35,15 @@
       Title: '{{ store.catalogue[store2.count].name }}'</div>
   
 
-  <div class="col-md-7 ">      <div class="waterpic">   <img  class="xlogo" src="../assets/xaxaxlogo16.png"/></div>   <img class="jump" :src="fillPic(this.store2.count)" /></div>
+  <div class="col-md-7 ">      <div class="waterpic">   <img  class="xlogo" src="../assets/xaxaxlogo16.png"/></div>
+  
+  
+  <router-link :to="{path:'visorson/'+this.store2.count}">
+     <img class="jump" :src="fillPic(this.store2.count)" />
+     
+  </router-link>
+     
+     </div>
        </div>
      
       <hr />

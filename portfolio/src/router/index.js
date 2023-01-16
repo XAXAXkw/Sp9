@@ -5,7 +5,16 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: () => import('@/components/MenuFather.vue')
+    component: () => import('@/components/ShopCard.vue')
+  },
+  
+  {
+    path: '/VisorSon/:id',
+    name: 'visorson',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '@/components/VisorSon.vue')
   },
   {
     path: '/about',

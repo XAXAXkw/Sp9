@@ -78,12 +78,13 @@
                 Art Collection
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Computed</a></li>
-                <li><a class="dropdown-item" href="#">FineArts</a></li>
-                <li><a class="dropdown-item" href="#">Comic-Books</a></li>
-                <li><a class="dropdown-item" href="#">Animation</a></li>
-                <li><a class="dropdown-item" href="#">Music</a></li>
-                <li><a class="dropdown-item" href="#">Photography</a></li>
+                <li><a class="dropdown-item" href="#"> <router-link to="/card">Developper</router-link></a></li>
+                <li><a class="dropdown-item" href="#"> <router-link to="/card">Painting</router-link></a></li>
+                <li><a class="dropdown-item" href="#"> <router-link to="/card">Animation</router-link></a></li>
+                <li><a class="dropdown-item" href="#"> <router-link to="/card">Comic-books</router-link></a></li>
+                <li><a class="dropdown-item" > <router-link to="/card">Music</router-link></a></li>
+                <li><a class="dropdown-item" href="#">  
+                  <router-link to="/card">FULL Catalogue</router-link></a></li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a class="dropdown-item">
