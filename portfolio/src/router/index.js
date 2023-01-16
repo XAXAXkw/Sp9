@@ -64,6 +64,11 @@ const routes = [
     path: '/masterzone',
     name: 'masterzone',
     component: () => import('@/components/MasterZone.vue')
+  },
+  {
+    path: '/visorcomp/:id',
+    name: 'visorcomp',
+    component: () => import('@/components/VisorComp.vue')
   }
 ]
 
