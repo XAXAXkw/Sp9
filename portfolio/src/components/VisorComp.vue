@@ -5,7 +5,7 @@ visor comp {{ this.$route.params.id }} -
 <router-link to="/card">
     <img v-if=visorStatus 
   @click="visorStatus=false"
-    src="../assets/paint/pintura_acab.png" />
+    src= " this.store.catalogue[0].src " />
 
  </router-link>
 
@@ -16,14 +16,16 @@ visor comp {{ this.$route.params.id }} -
 
 <script>
 
-
+import  useCatalogueStore  from '../stores/catalogueStore';
+const store= useCatalogueStore();
 
     export default {
         name:'VisorComp',
         
         data(){
             return{
-visorStatus:true,           }
+visorStatus:true,store
+      }
         },
      
     }
