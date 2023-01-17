@@ -1,6 +1,6 @@
 <template>
-  <div >
-
+  <div id="app" >
+<div>
 
 <p>{{  date }} - {{ message }}</p>
 
@@ -10,6 +10,7 @@
   
 
   <router-view />
+  </div>
 </template>
 <script>
 import NavBar from "@/components/NavBar.vue";
